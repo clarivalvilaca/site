@@ -9,21 +9,24 @@ header {
   background: #2c3e50;
   color: white;
   padding: 1em;
-  text-align: center;
+  display: flex;              /* coloca nome e menu lado a lado */
+  justify-content: space-between; /* separa o título e os links */
+  align-items: center;        /* centraliza verticalmente */
 }
 
 header h1 {
-  margin: 0 0 1em 0;
+  margin: 0;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;              /* deixa os itens na horizontal */
 }
 
 nav ul li {
-  margin: 0.5em 0;
+  margin-left: 20px;          /* espaço entre os links */
 }
 
 nav ul li a {
