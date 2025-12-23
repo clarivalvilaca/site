@@ -62,5 +62,14 @@
 </noscript>
 <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
   </footer>
+  <script>
+    const music = document.getElementById('bg-music');
+    const stopBtn = document.getElementById('stop-btn');
+
+    stopBtn.addEventListener('click', () => {
+      music.pause();
+      music.currentTime = 0; // volta ao início
+    });
+  </script>
 </body>
 </html>
