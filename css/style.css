@@ -133,16 +133,16 @@ footer {
 .music-player button {
   padding: 6px 12px;
   margin-right: 5px;
-  background-color: #0077cc;
-  color: #fff;
+  background-color: #000;
+  color: #800080;
   border: none;
   border-radius: 4px;
   font-size: 0.9em;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
-
 .music-player button:hover {
-  background-color: #005fa3;
+  background-color: #222;   /* preto mais claro no hover */
+  color: #a64ca6;           /* roxo mais vivo no hover */
 }
 
