@@ -146,3 +146,10 @@ footer {
   color: #a64ca6;           /* roxo mais vivo no hover */
 }
 
+.music-player p {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #800080; /* roxo para combinar com os botões */
+}
+
+
