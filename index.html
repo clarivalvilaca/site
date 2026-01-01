@@ -81,6 +81,16 @@
     music.pause();
     music.currentTime = 0; // volta ao início
   });
+  // MENU HAMBÚRGUER
+const menuToggle = document.createElement('button');
+menuToggle.classList.add('menu-toggle');
+menuToggle.innerHTML = '☰';
+document.querySelector('header').prepend(menuToggle);
+
+menuToggle.addEventListener('click', () => {
+  const navUl = document.querySelector('nav ul');
+  navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+});
 </script>
 </body>
 </html>
