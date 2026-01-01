@@ -152,4 +152,182 @@ footer {
   color: #800080; /* roxo para combinar com os botões */
 }
 
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* MENU DESKTOP */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* BOTÃO HAMBÚRGUER (MOBILE) */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  padding: 20px;
+  text-align: center;
+  background: #eee;
+}
+
+.hero h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin-bottom: 10px;
+}
+
+/* INTRO */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.intro img {
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+.intro-text {
+  max-width: 600px;
+}
+
+/* MUSIC PLAYER */
+.music-player {
+  margin-top: 15px;
+}
+
+.music-player button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.music-player button:hover {
+  background: #555;
+}
+
+/* CONTACT */
+.contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  color: #ff6600;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* MEDIA QUERY PARA CELULAR */
+@media (max-width: 768px) {
+  /* Header */
+  nav ul {
+    display: none; /* esconde menu padrão */
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block; /* mostra botão hambúrguer */
+  }
+
+  /* Intro */
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  /* Hero */
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
 
