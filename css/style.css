@@ -215,3 +215,16 @@ footer {
     font-size: 1rem;
   }
 }
+
+#data-hoje {
+  font-size: 1.1em;
+  margin: 10px 0 20px 0;
+  color: #ffeb3b; /* amarelo para destacar */
+  font-weight: bold;
+}
+
+#data-hoje i {
+  margin-right: 8px;
+  color: #fff; /* ícone branco para combinar com o título */
+}
+
