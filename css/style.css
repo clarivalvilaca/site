@@ -1,16 +1,23 @@
 /* Fonte moderna do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;
+  line-height: 1.6;
   background: #f9f9f9;
   color: #333;
 }
 
-/* Cabeçalho moderno */
+/* HEADER */
 header {
-  background: #1a1a1a;
+  background: #1a1a1a; /* azul escuro/preto */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -26,15 +33,13 @@ header {
   letter-spacing: 1px;
 }
 
+/* MENU DESKTOP */
 nav ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
-}
-
-nav ul li {
-  margin-left: 20px;
+  gap: 20px;
 }
 
 nav ul li a {
@@ -46,157 +51,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #00bcd4; /* azul moderno */
-}
-
-/* Hero section */
-.hero {
-  text-align: center;
-  padding: 4em 2em;
-  background: linear-gradient(135deg, #00bcd4, #3f51b5);
-  color: white;
-}
-
-.hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.hero p {
-  font-size: 1.2em;
-  max-width: 600px;
-  margin: auto;
-}
-
-/* Rodapé */
-footer {
-  background: #1a1a1a;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  margin-top: 2em;
-}
-
-.intro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2em;
-  background: #fff;
-}
-
-.intro img {
-  max-width: 300px;
-  margin-right: 20px;
-  border-radius: 8px;
-}
-
-.intro-text {
-  max-width: 500px;
-}
-
-.intro-text h3 {
-  margin-top: 0;
-}
-
-.contact {
-  background: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-}
-
-.contact a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px; /* espaço entre ícone e texto */
-  padding: 10px 20px;
-  background-color: #0077cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.contact a:hover {
-  background-color: #005fa3;
-}
-
-.contact i {
-  font-size: 42px; /* tamanho do ícone */
-}
-
-.music-player {
-  margin-top: 15px;
-  text-align: left; /* discreto, alinhado ao texto */
-}
-
-.music-player button {
-  padding: 6px 12px;
-  margin-right: 5px;
-  background-color: #000;
-  color: #800080;
-  border: none;
-  border-radius: 4px;
-  font-size: 0.9em;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-.music-player button:hover {
-  background-color: #222;   /* preto mais claro no hover */
-  color: #a64ca6;           /* roxo mais vivo no hover */
-}
-
-.music-player p {
-  margin-bottom: 10px;
-  font-style: italic;
-  color: #800080; /* roxo para combinar com os botões */
-}
-
-/* RESET BÁSICO */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
-}
-
-/* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background: #333;
-  color: #fff;
-  position: relative;
-}
-
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-/* MENU DESKTOP */
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #ffcc00;
 }
 
 /* BOTÃO HAMBÚRGUER (MOBILE) */
@@ -211,18 +65,21 @@ nav ul li a:hover {
 
 /* HERO */
 .hero {
-  padding: 20px;
   text-align: center;
-  background: #eee;
+  padding: 4em 2em;
+  background: linear-gradient(135deg, #00bcd4, #3f51b5); /* gradiente azul */
+  color: white;
 }
 
 .hero h2 {
-  margin-bottom: 15px;
-  font-size: 2rem;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 .hero p {
-  margin-bottom: 10px;
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: auto;
 }
 
 /* INTRO */
@@ -230,60 +87,88 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2em;
+  background: #fff;
   gap: 20px;
-  padding: 20px;
 }
 
 .intro img {
-  max-width: 250px;
-  border-radius: 10px;
+  max-width: 300px;
+  border-radius: 8px;
 }
 
 .intro-text {
-  max-width: 600px;
+  max-width: 500px;
+}
+
+.intro-text h3 {
+  margin-top: 0;
 }
 
 /* MUSIC PLAYER */
 .music-player {
   margin-top: 15px;
+  text-align: left;
 }
 
 .music-player button {
-  margin-right: 10px;
-  padding: 8px 12px;
+  padding: 6px 12px;
+  margin-right: 5px;
+  background-color: #000; /* fundo preto */
+  color: #800080;         /* roxo */
   border: none;
-  background: #333;
-  color: #fff;
+  border-radius: 4px;
+  font-size: 0.9em;
   cursor: pointer;
-  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .music-player button:hover {
-  background: #555;
+  background-color: #222; /* preto mais claro */
+  color: #a64ca6;         /* roxo mais vivo */
+}
+
+.music-player p {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #800080; /* roxo */
 }
 
 /* CONTACT */
 .contact {
-  padding: 20px;
+  background: #fff;
   text-align: center;
+  padding: 20px;
+  margin-top: 30px;
 }
 
 .contact a {
-  color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #0077cc; /* azul */
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .contact a:hover {
-  color: #ff6600;
+  background-color: #005fa3; /* azul mais escuro */
+}
+
+.contact i {
+  font-size: 42px;
 }
 
 /* FOOTER */
 footer {
-  background: #333;
-  color: #fff;
+  background: #1a1a1a; /* azul escuro/preto */
+  color: white;
   text-align: center;
-  padding: 15px;
+  padding: 1em;
+  margin-top: 2em;
   font-size: 0.9rem;
 }
 
@@ -293,7 +178,7 @@ footer {
   nav ul {
     display: none; /* esconde menu padrão */
     flex-direction: column;
-    background: #444;
+    background: #1a1a1a; /* mesmo azul escuro do header */
     position: absolute;
     top: 60px;
     right: 0;
@@ -330,4 +215,3 @@ footer {
     font-size: 1rem;
   }
 }
-
