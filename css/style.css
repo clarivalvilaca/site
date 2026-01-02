@@ -241,5 +241,13 @@ body.quem-sou-eu nav ul li a.active {
   border-bottom: 2px solid #3f51b5; /* sublinhado para desktop */
 }
 
+/* ===== Ajuste de cor para página Quem sou eu ===== */
+body.quem-sou-eu .hero h2,
+body.quem-sou-eu .hero p,
+body.quem-sou-eu #data-hoje {
+  color: #000 !important; /* preto */
+}
+
+
 
 
