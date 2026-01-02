@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem sou eu? - Clarival Vilaça</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html" class="active">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="mais.html">Mais</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Quem sou eu?</h2>
+    <p>Um pouco da minha história, trajetória e paixões.</p>
+  </section>
+
+  <!-- Conteúdo principal -->
+  <section class="intro">
+    <img src="img/minha-foto.jpg" alt="Foto de Clarival Vilaça">
+    <div class="intro-text">
+      <h3>Sobre mim</h3>
+      <p>
+        Meu nome é Clarival Vilaça, sou apaixonado por literatura, música e cultura brasileira. 
+        Ao longo da minha vida, venho dedicando tempo à escrita, à reflexão e à produção de conteúdos 
+        que unem prosa e verso, sempre buscando compartilhar conhecimento e inspiração.
+      </p>
+      <p>
+        Este espaço é uma extensão do meu canto pessoal, onde divido minhas obras, pensamentos 
+        e projetos com todos que desejam conhecer mais sobre mim.
+      </p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 Clarival Vilaça - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Script para menu mobile -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+
+</body>
+</html>
