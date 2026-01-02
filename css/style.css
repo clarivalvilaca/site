@@ -264,6 +264,14 @@ body.quem-sou-eu #data-hoje {
   line-height: 1.6;            /* altura da linha para leitura confortável */
 }
 
+.titulo-moldura {
+  text-align: center;   /* centraliza o título */
+  font-weight: bold;    /* deixa em negrito */
+  color: #000;          /* cor preta */
+  margin-bottom: 20px;  /* espaço abaixo do título */
+  font-size: 1.4em;     /* tamanho um pouco maior */
+}
+
 
 
 
