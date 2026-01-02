@@ -230,7 +230,7 @@ footer {
 
 /* ===== Estilos exclusivos da página Quem sou eu ===== */
 body.quem-sou-eu .hero {
-  background: linear-gradient(to bottom, #3a3a3a, #ffffff) !important; /* degrade cinza-branco */
+  background: linear-gradient(to bottom, #1a1a1a, #e0e0e0) !important; /* grafite bem escuro → cinza claro */
   padding: 40px;
   text-align: center;
 }
