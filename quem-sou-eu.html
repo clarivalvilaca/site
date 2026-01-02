@@ -2,72 +2,103 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quem sou eu? - Clarival Vilaça</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome para ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Cabeçalho -->
+  <!-- Cabeçalho igual ao index -->
   <header>
     <div class="logo">Clarival Vilaça</div>
-    <button class="menu-toggle">☰</button>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
         <li><a href="downloads.html">Downloads</a></li>
         <li><a href="quem-sou-eu.html" class="active">Quem sou eu?</a></li>
         <li><a href="meus-livros.html">Meus livros</a></li>
         <li><a href="entretenimento.html">Entretenimento</a></li>
-        <li><a href="mais.html">Mais</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h2>Quem sou eu?</h2>
-    <p>Um pouco da minha história, trajetória e paixões.</p>
-  </section>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h2>Quem sou eu?</h2>
+      <div id="data-hoje">
+        <i class="fa-solid fa-calendar-days"></i>
+        <span></span>
+      </div>
+      <p>🇧🇷 Aqui você vai conhecer um pouco da minha história, minhas paixões e minha trajetória.</p>
+      <br>
+      <p>🇬🇧 Here you will get to know a little about my story, my passions and my journey.</p>
+    </section>
 
-  <!-- Conteúdo principal -->
-  <section class="intro">
-    <img src="img/minha-foto.jpg" alt="Foto de Clarival Vilaça">
-    <div class="intro-text">
-      <h3>Sobre mim</h3>
-      <p>
-        Meu nome é Clarival Vilaça, sou apaixonado por literatura, música e cultura brasileira. 
-        Ao longo da minha vida, venho dedicando tempo à escrita, à reflexão e à produção de conteúdos 
-        que unem prosa e verso, sempre buscando compartilhar conhecimento e inspiração.
-      </p>
-      <p>
-        Este espaço é uma extensão do meu canto pessoal, onde divido minhas obras, pensamentos 
-        e projetos com todos que desejam conhecer mais sobre mim.
-      </p>
-    </div>
-  </section>
+    <!-- Conteúdo principal -->
+    <section class="intro">
+      <img src="me.jpg" alt="Clarival Vilaça">
+      <div class="intro-text">
+        <h3>Sobre mim</h3>
+        <p>
+          Meu nome é Clarival Vilaça, sou apaixonado por literatura, música e cultura brasileira. 
+          Ao longo da minha vida, venho dedicando tempo à escrita, à reflexão e à produção de conteúdos 
+          que unem prosa e verso, sempre buscando compartilhar conhecimento e inspiração.
+        </p>
+        <p>
+          Este espaço é uma extensão do meu canto pessoal, onde divido minhas obras, pensamentos 
+          e projetos com todos que desejam conhecer mais sobre mim.
+        </p>
+      </div>
+    </section>
 
-  <!-- Rodapé -->
-  <footer>
+    <!-- Contato -->
     <section class="contact">
       <p>📩 Quer falar comigo? Clique no link abaixo:</p>
       <a href="mailto:pqdt64098@bol.com.br">
         <i class="fa-solid fa-envelope"></i> Enviar e-mail
       </a>
     </section>
-    <p>&copy; 2026 Clarival Vilaça - Todos os direitos reservados</p>
+  </main>
+
+  <!-- Rodapé igual ao index -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Script para menu mobile -->
+  <!-- Scripts iguais ao index -->
   <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav ul');
-    menuToggle.addEventListener('click', () => {
-      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-    });
-  </script>
+    // MENU HAMBÚRGUER
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
 
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Mostrar data atual abaixo do título
+    function mostrarData() {
+      const diasSemana = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
+      const hoje = new Date();
+      const diaSemana = diasSemana[hoje.getDay()];
+      const dia = hoje.getDate();
+      const mes = hoje.getMonth() + 1; // meses começam em 0
+      const ano = hoje.getFullYear();
+
+      document.querySelector("#data-hoje span").innerText =
+        `Hoje é ${diaSemana}, ${dia}/${mes}/${ano}`;
+    }
+    mostrarData();
+  </script>
 </body>
 </html>
+
