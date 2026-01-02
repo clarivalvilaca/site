@@ -248,6 +248,23 @@ body.quem-sou-eu #data-hoje {
   color: #000 !important; /* preto */
 }
 
+/* Moldura para textos longos */
+.moldura {
+  border: 2px solid #3f51b5;   /* borda azul elegante */
+  border-radius: 8px;          /* cantos arredondados */
+  padding: 20px;               /* espaço interno */
+  background-color: #fdfdfd;   /* fundo branco suave */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* leve sombra */
+}
+
+/* Parágrafos dentro da moldura */
+.moldura p {
+  margin-bottom: 1em;          /* espaço entre parágrafos */
+  text-align: justify;         /* texto alinhado dos dois lados */
+  line-height: 1.6;            /* altura da linha para leitura confortável */
+}
+
+
 
 
 
