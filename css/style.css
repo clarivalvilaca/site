@@ -272,6 +272,58 @@ body.quem-sou-eu #data-hoje {
   font-size: 1.4em;     /* tamanho um pouco maior */
 }
 
+/* Galeria */
+body.galeria main {
+  padding: 20px;
+  text-align: center;
+}
+
+.album {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.album .foto {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.album .foto img {
+  width: 100%;
+  display: block;
+}
+
+.album .foto p {
+  padding: 10px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.links-extra ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-extra li {
+  margin: 10px 0;
+}
+
+.links-extra a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links-extra a:hover {
+  text-decoration: underline;
+}
 
 
 
