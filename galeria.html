@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Galeria de Fotos - Clarival Vilaça</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css"> <!-- estilo geral -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="galeria">
 
-  <!-- Cabeçalho -->
+  <!-- Cabeçalho igual ao quem-sou-eu -->
   <header>
     <div class="logo">Clarival Vilaça</div>
     <nav>
@@ -60,10 +61,30 @@
     </section>
   </main>
 
-  <!-- Rodapé -->
+  <!-- Rodapé igual ao quem-sou-eu -->
   <footer>
-    <p>&copy; Clarival Vilaça - Todos os direitos reservados.</p>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
   </footer>
 
+  <!-- Scripts iguais ao quem-sou-eu -->
+  <script>
+    // MENU HAMBÚRGUER
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
 </body>
 </html>
+
