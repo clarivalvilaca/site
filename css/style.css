@@ -295,6 +295,12 @@ body.galeria main {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.album .foto a {
+  text-decoration: none; /* remove sublinhado do link */
+  color: inherit;        /* mantém cor padrão */
+  display: block;        /* ocupa toda a área */
+}
+
 .album .foto img {
   width: 100%;
   display: block;
@@ -304,6 +310,7 @@ body.galeria main {
   padding: 10px;
   font-size: 0.95em;
   color: #333;
+  margin: 0; /* remove espaço extra */
 }
 
 .links-extra ul {
