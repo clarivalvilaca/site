@@ -332,6 +332,38 @@ body.galeria main {
   text-decoration: underline;
 }
 
+/* Galeria Irmazina */
+body.galeria-irmazina main {
+  padding: 20px;
+  text-align: center;
+}
+
+.foto-dupla {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.foto-dupla .foto {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.foto-dupla .descricao {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #333;
+}
+
 
 
 
