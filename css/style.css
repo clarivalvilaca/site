@@ -338,30 +338,61 @@ body.galeria-irmazina main {
   text-align: center;
 }
 
-.foto-dupla {
+/* Bloco padrão: foto esquerda, texto direita */
+.bloco {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 20px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  margin: 30px auto;
+  max-width: 900px; /* largura máxima centralizada */
 }
 
-.foto-dupla .foto {
-  width: 250px;
-  border: 1px solid #ccc;
+.bloco img {
+  width: 300px; /* fotos maiores */
   border-radius: 8px;
-  overflow: hidden;
-  background: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.foto-dupla .descricao {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 0.95em;
+.bloco .texto {
+  flex: 1;
+  text-align: left;
+}
+
+.bloco .descricao {
+  font-size: 1em;
   color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bloco duplo (fotos 3 e 4 lado a lado) */
+.bloco-duplo {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.bloco-duplo .fotos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.bloco-duplo .fotos img {
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bloco-duplo .descricao {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 
