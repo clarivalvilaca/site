@@ -331,6 +331,47 @@ body.galeria main {
   text-decoration: none; /* remove sublinhado do link */
   color: inherit;        /* mantém cor padrão */
   display: block;        /* ocupa toda a
+}
+
+/* Correções específicas da página Galeria (não afetam irmazina) */
+body.galeria .album {
+  justify-content: center;
+  gap: 20px;
+}
+
+body.galeria .album .foto {
+  width: 240px;            /* volta ao tamanho compacto */
+  max-width: 240px;
+}
+
+body.galeria .album .foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body.galeria .album .foto p {
+  font-size: 0.95em;
+  padding: 10px;
+}
+
+/* Responsivo para a página Galeria */
+@media (max-width: 768px) {
+  body.galeria .album .foto {
+    width: 180px;          /* menor no celular para não “estourar” */
+    max-width: 180px;
+  }
+
+  body.galeria .album {
+    gap: 16px;
+  }
+
+  body.galeria .album .foto p {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}
+
 
 
 
