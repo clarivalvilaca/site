@@ -214,6 +214,38 @@ footer {
   .hero p {
     font-size: 1rem;
   }
+
+  /* Blocos individuais: foto em cima, texto embaixo */
+  .bloco {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloco img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .bloco .texto {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* Bloco duplo (fotos 3 e 4) */
+  .bloco-duplo .fotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloco-duplo .fotos img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .bloco-duplo .descricao {
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 #data-hoje {
@@ -298,102 +330,7 @@ body.galeria main {
 .album .foto a {
   text-decoration: none; /* remove sublinhado do link */
   color: inherit;        /* mantém cor padrão */
-  display: block;        /* ocupa toda a área */
-}
-
-.album .foto img {
-  width: 100%;
-  display: block;
-}
-
-.album .foto p {
-  padding: 10px;
-  font-size: 0.95em;
-  color: #333;
-  margin: 0; /* remove espaço extra */
-}
-
-.links-extra ul {
-  list-style: none;
-  padding: 0;
-}
-
-.links-extra li {
-  margin: 10px 0;
-}
-
-.links-extra a {
-  color: #3f51b5;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.links-extra a:hover {
-  text-decoration: underline;
-}
-
-/* Galeria Irmazina */
-body.galeria-irmazina main {
-  padding: 20px;
-  text-align: center;
-}
-
-/* Bloco padrão: foto esquerda, texto direita */
-.bloco {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin: 30px auto;
-  max-width: 900px; /* largura máxima centralizada */
-}
-
-.bloco img {
-  width: 300px; /* fotos maiores */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.bloco .texto {
-  flex: 1;
-  text-align: left;
-}
-
-.bloco .descricao {
-  font-size: 1em;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Bloco duplo (fotos 3 e 4 lado a lado) */
-.bloco-duplo {
-  text-align: center;
-  margin: 40px auto;
-  max-width: 900px;
-}
-
-.bloco-duplo .fotos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
-}
-
-.bloco-duplo .fotos img {
-  width: 250px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.bloco-duplo .descricao {
-  font-size: 1em;
-  color: #333;
-  line-height: 1.6;
-  margin: 0 auto;
-  max-width: 700px;
-}
+  display: block;        /* ocupa toda a
 
 
 
