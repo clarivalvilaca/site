@@ -235,10 +235,10 @@ body.quem-sou-eu .hero {
   text-align: center;
 }
 
-body.quem-sou-eu nav ul li a.active {
-  color: #3f51b5;          /* azul elegante */
-  font-weight: bold;
-  border-bottom: 2px solid #3f51b5; /* sublinhado para desktop */
+nav ul li a.active {
+  color: #00bcd4;   /* mesmo azul do hover */
+  font-weight: bold; /* opcional, para destacar */
+  border-bottom: none; /* remove o sublinhado */
 }
 
 /* ===== Ajuste de cor para página Quem sou eu ===== */
