@@ -29,7 +29,9 @@
     <section class="album">
       <!-- Foto 1 -->
       <div class="bloco">
+        <a href="euegang.jpg" class="zoom">
         <img src="euegang.jpg" alt="A Gang:">
+        </a>
         <div class="texto">
           <p class="descricao">
             Da esquerda para a direita: Luiz Januário, eu, Arildes Cardoso (CBN), Getúlio de Souza (IBGE), Dejamar (UERJ), Paulo César I e Paulo César II.
@@ -41,7 +43,9 @@
 
       <!-- Foto 2 -->
       <div class="bloco">
+        <a href="sueli.jpg" class="zoom">
         <img src="sueli.jpg" alt="Sueli e Fátima">
+        </a>
         <div class="texto">
           <p class="descricao">
             Aqui está dona Encrenca, ao lado de nossa amiga louca e loira, a Fátima. Sueli está de branco e estávamos juntos há 37 aninhos... que pena...
@@ -53,8 +57,12 @@
       <!-- Foto 3 e 4 lado a lado -->
       <div class="bloco-duplo">
         <div class="fotos">
+          <a href="vanessa.jpg" class="zoom">
           <img src="vanessa.jpg" alt="Vanessa">
+            </a>
+          <a href="ricardo.jpg" class="zoom">
           <img src="ricardo.jpg" alt="Ricardo">
+            </a>
         </div>
         <p class="descricao">
           Aqui estão os pequerruchos. Meus orgulhos, cada um em sua área. Vanessa e Ricardo.
@@ -63,7 +71,9 @@
 
       <!-- Foto 5 -->
       <div class="bloco">
+        <a href="clarice.jpg" class="zoom">
         <img src="clarice.jpg" alt="Dona Clarice">
+          </a>
         <div class="texto">
           <p class="descricao">
             Dona Clarice, (nasceu em 1920, faça as contas), hipertensa, mas cheia de vitalidade e muito apegada à vida.
@@ -75,7 +85,9 @@
 
       <!-- Foto 6 -->
       <div class="bloco">
+        <a href="alvarice.jpg" class="zoom">
         <img src="alvarice.jpg" alt="Irmã e Filhos">
+          </a>
         <div class="texto">
           <p class="descricao">
             Minha irmã Alvarice e seus filhos, Marcelo e André. Minha irmãzinha faleceu em 15 Nov 2017, vítima de um câncer.
@@ -96,6 +108,30 @@
     </noscript>
     <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
   </footer>
+  <script>
+  // Seleciona todos os links de zoom
+  document.querySelectorAll('a.zoom').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const imgSrc = this.getAttribute('href');
+
+      // Cria o lightbox
+      const lightbox = document.createElement('div');
+      lightbox.classList.add('lightbox');
+
+      const img = document.createElement('img');
+      img.src = imgSrc;
+
+      lightbox.appendChild(img);
+      document.body.appendChild(lightbox);
+
+      // Fecha ao clicar fora da imagem
+      lightbox.addEventListener('click', () => {
+        document.body.removeChild(lightbox);
+      });
+    });
+  });
+</script>
 </body>
 </html>
 
