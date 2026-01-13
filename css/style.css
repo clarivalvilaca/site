@@ -489,8 +489,10 @@ body.galeria-irmazina .bloco-duplo .descricao {
     padding: 10px;
     text-align: center;
   }
+}
 
-  /* Lightbox simples */
+
+ /* Lightbox simples */
 .lightbox {
   position: fixed;
   top: 0;
