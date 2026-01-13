@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>A Página da Sueli - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="pagina-sueli">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Player de música logo no início -->
+    <section class="music-player">
+      <p><em>🎵 Tocando automaticamente: "Smile"</em></p>
+      <audio id="audioSmile" autoplay>
+        <source src="musicas/smile.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+      <div>
+        <button onclick="document.getElementById('audioSmile').play()">Play</button>
+        <button onclick="document.getElementById('audioSmile').pause()">Pause</button>
+        <button onclick="document.getElementById('audioSmile').currentTime=0;document.getElementById('audioSmile').pause()">Stop</button>
+      </div>
+    </section>
+
+    <!-- Título central -->
+    <h2 class="titulo-sueli">A Página da Sueli</h2>
+
+    <!-- Gif + texto lateral -->
+    <section class="gif-texto">
+      <img src="sueli.gif" alt="Gif da Sueli">
+      <p>Leia enquanto ouve <em>"Smile"</em></p>
+    </section>
+
+    <!-- Citação de Olavo Bilac -->
+    <blockquote class="citacao">
+      "Nunca morrer assim! Nunca morrer num dia assim! De um Sol Assim!"
+    </blockquote>
+
+    <!-- Moldura para texto principal -->
+    <div class="moldura">
+      <h3 class="titulo-moldura">Sobre Sueli</h3>
+
+      <p>A não mais de 40 metros da minha casa passava a via férrea. Ao lado dela um aqueduto com cerca de um metro de diâmetro. Havia um pontilhão sobre um pequeno riacho e sobre ele passavam ambos: o trem e a água conduzida pelo aqueduto.</p>
+
+      <p>Os escolares podiam passar pelo pontilhão com certa segurança mas sempre preferiam se equilibrar caminhando ou correndo sobre o aqueduto. O pontilhão cobria parte da visão que eu tinha do local, mas da minha janela eu podia ver perninhas se movendo sobre o cano abaixo do pontilhão e ombros e cabeças acima dele. Sempre sorridentes e cheios de energia, lá iam eles para o colégio, se arriscando a cair de uma altura de quase dois metros num filete de água ainda límpida naquela época.</p>
+
+      <p>Creio ter sido essa a primeira vez que a vi. Pernas grossas e roliças, rosto rosado e cabelo amarrado em coque. Mais tarde vi que tinha olhos amendoados e um sorriso luminoso.</p>
+
+      <p>Estávamos na segunda metade da década de 50, Getúlio era uma lembrança e Juscelino prometia cinquenta anos em cinco.</p>
+
+      <p>Terminava a década e éramos namorados. Aqueles namoros de pegar na mão e do beijo conseguido a duras penas e muito rapidamente correspondido. Era 1965 e ela queria se casar. Eu disse não. Eu não tinha emprego garantido e não podia correr o risco de passarmos dificuldades. Era 1966 e ela voltou ao assunto. Eu tinha emprego seguro, mas respondi não, mais uma vez. Não tínhamos uma casa e eu me recusava a pagar aluguel. Então, comprei um terreno, onde construí uma casa menor. Abriguei a todos: ela, a mãe e o irmão. Então construí nossa tão almejada casa própria.</p>
+
+      <p>Era então 1969 e quatro meses antes de Neil Armstrong dar os primeiros passos na lua, nos casamos (março). Demorou, mas em 1975 nasceu a Vanessa e em 1980, o Ricardo. Nossa família estava formada e restava viver.</p>
+
+      <p>A vida militar sempre exigiu muito de mim, mas sempre fui dedicado ao trabalho e por isso, servi por 30 anos sem atropelos e depois me transferi para a reserva do Exército. Foi quando ela me disse desconfiar que tinha um nódulo no seio. Corremos para o médico ginecologista, que deu diagnóstico errado, garantindo que ela nada tinha, sem pedir exames, e seis meses depois ela me garantiu que sim, havia algo em seu seio esquerdo. Voltamos ao médico, dessa vez especialista, e ele pediu exames confirmando o nódulo. (...) nesse parêntese, coloque tudo que quiser: cirurgia, radioterapia, quimioterapia, medicamentos, sofrimentos de toda sorte provocados pelo tratamento, etc.</p>
+
+      <p>Estávamos em 2006. Foi-se o mês de janeiro e desde agosto de 2004 Sueli fazia quimioterapia usando apenas comprimidos. Até o final de 2005 esteve bem, mas janeiro de 2006 transcorreu muito feio. Ela perdeu o apetite por completo, começou a devanear, a não reconhecer coisas e pessoas, o olhar perdido em algum sonho de sua mente. Nos pareceu, pelo menos a mim, que ela não iria torcer pela Beija-Flor naquele ano. Eu temia isso. Mas desejava sempre que ela pudesse ficar mais tempo conosco.</p>
+
+      <p>Sueli faleceu em 10 de fevereiro de 2006, depois de muito sofrimento. Eu a conheci há 46 anos e depois de casarmos, ficamos juntos por 36 anos, 11 meses e 10 dias. Será muito difícil apagar tudo isso do HD na minha cabeça.</p>
+
+      <p>Viverei das boas lembranças de tudo que fizemos e vivemos juntos. Nessa existência não há mais nada pelo que lutar, não há objetivos a alcançar, nem alegrias a viver. Estou apenas esperando. Se existe um céu de Sueli, nos veremos por lá.</p>
+
+      <p><strong>PS:</strong> Nessa homepage há muito mais sobre ela, mas o link está oculto e é difícil de achar. Quem o fizer terá a surpresa de saber o quanto ainda podia ser dito. É como um diário íntimo. Meu e dela.</p>
+    </div>
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
