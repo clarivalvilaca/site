@@ -109,6 +109,20 @@
     </noscript>
     <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
   </footer>
+  
+   <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+
   <script>
   // Seleciona todos os links de zoom
   document.querySelectorAll('a.zoom').forEach(link => {
