@@ -647,5 +647,42 @@ body.pagina-sueli .titulo-moldura {
   }
 }
 
+/* ===== Estilos exclusivos da página Biografia ===== */
+body.pagina-biografia main {
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo-biografia {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #d4af37; /* dourado/amarelo elegante */
+}
+
+/* Moldura amarela */
+.moldura-amarela {
+  border: 2px solid #ffeb3b;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fffde7;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.moldura-amarela p {
+  margin-bottom: 1em;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+body.pagina-biografia .titulo-moldura {
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
 
 
