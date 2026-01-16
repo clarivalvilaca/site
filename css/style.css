@@ -695,5 +695,89 @@ body.pagina-biografia .music-player audio {
   margin: 0 auto 10px;  /* centraliza horizontalmente */
 }
 
+/* ===== Página Paraquedista ===== */
+body.pagina-paraquedista main {
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo-paraquedista {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #3f51b5;
+}
+
+.intro-paraquedista {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.titulo-album {
+  font-size: 1.5em;
+  margin: 20px 0;
+  color: #000;
+}
+
+/* Álbum de fotos */
+.album-paraquedista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.album-paraquedista .foto {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.album-paraquedista .foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.album-paraquedista .foto p {
+  font-size: 0.85em;
+  padding: 8px;
+  margin: 0;
+  color: #333;
+}
+
+/* Texto final */
+.texto-final {
+  margin: 40px auto;
+  font-size: 1.1em;
+}
+
+.texto-final a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.texto-final a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .album-paraquedista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .album-paraquedista {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
