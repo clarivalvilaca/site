@@ -863,4 +863,62 @@ body.pagina-curso-paraquedista {
   touch-action: manipulation;
 }
 
+/* ===== Página Galeria Montanha ===== */
+body.pagina-galeria-montanha main {
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo-montanha {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+}
+
+.moldura-preta {
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.album-montanha {
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.album-montanha .foto {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.album-montanha .foto img {
+  display: block;
+  max-width: 100%;
+  height: auto; /* mantém tamanho original */
+  margin: 0 auto;
+}
+
+.album-montanha .foto p {
+  font-size: 0.85em;
+  margin-top: 5px;
+  color: #333;
+}
+
+/* Linha vermelha padrão */
+.linha-vermelha {
+  border: none;
+  border-top: 2px solid red;
+  margin: 20px 0;
+}
+
+/* Linha final mais grossa */
+.linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
 
