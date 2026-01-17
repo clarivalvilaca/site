@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>GALGANDO O MONTE SILVADO - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-retorno-montanha">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Título -->
+    <h2 class="titulo-retorno">GALGANDO O MONTE SILVADO</h2>
+    <hr class="linha-vermelha">
+
+    <!-- Introdução -->
+    <p class="intro-retorno">
+      Em 22 de agosto de 1999, eu e três colegas empreendemos a subida, pela segunda vez, do Monte Silvado, 640 metros de altura, situado na região litorânea de Maricá, Estado do Rio de Janeiro.
+    </p>
+    <hr class="linha-vermelha">
+
+    <!-- Preparativos -->
+    <h3 class="subtitulo"><u>Preparativos</u></h3>
+    <div class="foto">
+      <img src="r01.jpg" alt="Preparativos">
+      <p>Nos reunimos naquele domingo, às 0600 h, na casa do Natanael e de lá partimos para Maricá. [...]</p>
+    </div>
+    <hr class="linha-vermelha">
+
+    <div class="foto">
+      <img src="r02.jpg" alt="Cume">
+      <p>O cume se localiza no ápice da face sudeste, a mais íngreme. [...]</p>
+    </div>
+    <hr class="linha-vermelha">
+
+    <div class="foto">
+      <img src="r03.jpg" alt="0730h">
+      <p>0730h. Não usamos qualquer equipamento especial, nem mesmo cordas [...]</p>
+    </div>
+    <hr class="linha-vermelha">
+
+    <!-- Início da Subida -->
+    <h3 class="subtitulo"><u>Início da Subida</u></h3>
+    <div class="foto">
+      <img src="r04.jpg" alt="Início da Subida">
+      <p>Atravessamos um pequeno campo de futebol, localizado atrás do único comércio local. [...]</p>
+    </div>
+    <hr class="linha-vermelha">
+
+    <!-- Primeira Hora -->
+    <h3 class="subtitulo"><u>A Primeira Hora</u></h3>
+    <p class="texto-retorno">
+      Com uma hora de caminhada, vencemos cercas e mato denso. [...]  
+      Pudemos observar que nessa região, o Silvado é quase todo cercado de rica vegetação [...]
+    </p>
+    <hr class="linha-vermelha">
+
+    <!-- Platô -->
+    <h3 class="subtitulo"><u>Platô</u></h3>
+    <p class="texto-retorno">
+      A saída do primeiro platô nos mostra logo de cara mais uma cerca, que guarda outra mata cerrada [...]  
+      O lance seguinte nos colocará numa elevação logo abaixo do objetivo final. [...]
+    </p>
+    <hr class="linha-vermelha">
+
+    <!-- Último Lance -->
+    <h3 class="subtitulo"><u>O Último Lance</u></h3>
+    <p class="texto-retorno">
+      É o último lance, mas exige do excursionista determinação, persistência e vigor físico [...]  
+      Chegar ao cume é uma experiência única. [...]
+    </p>
+    <hr class="linha-vermelha">
+
+    <!-- No Cume -->
+    <p class="texto-retorno">
+      No cume do Silvado, temos plena visão (360 graus), sem qualquer obstáculo [...]  
+      A rodovia mais claramente visível é a RJ-116 que leva à Região dos Lagos.
+    </p>
+    <hr class="linha-vermelha-final">
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
