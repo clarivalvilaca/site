@@ -42,127 +42,127 @@
     <div class="album-paraquedista">
       <!-- Exemplo de bloco de imagem -->
       <div class="foto">
-        <a href="p01.jpg" class="zoom">
+        <a href="p01.jpg" class="zoom-paraquedista">
           <img src="p01.jpg" alt="Foto 1">
         </a>
       <p>O pátio aguarda os heróis da Serra do Mendanha</p>
       </div>
       <div class="foto">
-        <a href="p02.jpg" class="zoom">
+        <a href="p02.jpg" class="zoom-paraquedista">
           <img src="p02.jpg" alt="Foto 2">
         </a>
         <p>Outro ângulo</p>
       </div>
       <div class="foto">
-        <a href="p03.jpg" class="zoom">
+        <a href="p03.jpg" class="zoom-paraquedista">
           <img src="p03.jpg" alt="Foto 3">
         </a>
         <p>O famoso e esperado Boot</p>
       </div>
        <div class="foto">
-        <a href="p04.jpg" class="zoom">
+        <a href="p04.jpg" class="zoom-paraquedista">
           <img src="p04.jpg" alt="Foto 4">
         </a>
         <p>Todos aguardando</p>
       </div>
       <div class="foto">
-        <a href="p05.jpg" class="zoom">
+        <a href="p05.jpg" class="zoom-paraquedista">
           <img src="p05.jpg" alt="Foto 5">
         </a>
         <p>Ei-los que chegam!</p>
       </div>
       <div class="foto">
-        <a href="p06.jpg" class="zoom">
+        <a href="p06.jpg" class="zoom-paraquedista">
           <img src="p06.jpg" alt="Foto 6">
         </a>
         <p>Os homens buscam seus lugares</p>
       </div>
       <div class="foto">
-        <a href="p07.jpg" class="zoom">
+        <a href="p07.jpg" class="zoom-paraquedista">
           <img src="p07.jpg" alt="Foto 7">
         </a>
         <p>Eis o Ricardo!</p>
       </div>
       <div class="foto">
-        <a href="p08.jpg" class="zoom">
+        <a href="p08.jpg" class="zoom-paraquedista">
           <img src="p08.jpg" alt="Foto 8">
         </a>
         <p>Tentando tirar o coturno cheio de lama fétida.</p>
       </div>
       <div class="foto">
-        <a href="p09.jpg" class="zoom">
+        <a href="p09.jpg" class="zoom-paraquedista">
           <img src="p09.jpg" alt="Foto 9">
         </a>
         <p>Quase conseguindo trocar o coturno pelo Boot.</p>
       </div>
       <div class="foto">
-        <a href="p10.jpg" class="zoom">
+        <a href="p10.jpg" class="zoom-paraquedista">
           <img src="p10.jpg" alt="Foto 10">
         </a>
         <p>Um farrapo humano!</p>
       </div>
       <div class="foto">
-        <a href="p11.jpg" class="zoom">
+        <a href="p11.jpg" class="zoom-paraquedista">
           <img src="p11.jpg" alt="Foto 11">
         </a>
         <p>Um sorriso meigo e uma calça rasgada.</p>
       </div>
       <div class="foto">
-        <a href="p12.jpg" class="zoom">
+        <a href="p12.jpg" class="zoom-paraquedista">
           <img src="p12.jpg" alt="Foto 12">
         </a>
         <p>O  BOOT !!!</p>
       </div>
       <div class="foto">
-        <a href="p13.jpg" class="zoom">
+        <a href="p13.jpg" class="zoom-paraquedista">
           <img src="p13.jpg" alt="Foto 13">
         </a>
         <p>Vamos jogar o "pé-preto" fora?</p>
       </div>
       <div class="foto">
-        <a href="p14.jpg" class="zoom">
+        <a href="p14.jpg" class="zoom-paraquedista">
           <img src="p14.jpg" alt="Foto 14">
         </a>
         <p>Em direção ao lixo!</p>
       </div>
       <div class="foto">
-        <a href="p15.jpg" class="zoom">
+        <a href="p15.jpg" class="zoom-paraquedista">
           <img src="p15.jpg" alt="Foto 15">
         </a>
         <p>Retornando ao seu lugar.</p>
       </div>
       <div class="foto">
-        <a href="p16.jpg" class="zoom">
+        <a href="p16.jpg" class="zoom-paraquedista">
           <img src="p16.jpg" alt="Foto 16">
         </a>
         <p>ST Virgílio coloca a plaqueta de identificação</p>
       </div>
       <div class="foto">
-        <a href="p17.jpg" class="zoom">
+        <a href="p17.jpg" class="zoom-paraquedista">
           <img src="p17.jpg" alt="Foto 17">
         </a>
         <p>Eu colocando o gorro com o emblema de paraquedista.</p>
       </div>
       <div class="foto">
-        <a href="p18.jpg" class="zoom">
+        <a href="p18.jpg" class="zoom-paraquedista">
           <img src="p18.jpg" alt="Foto 18">
         </a>
         <p>Cumprimentos do A. Carlos</p>
       </div>
       <div class="foto">
-        <a href="p19.jpg" class="zoom">
+        <a href="p19.jpg" class="zoom-paraquedista">
           <img src="p19.jpg" alt="Foto 19">
         </a>
         <p>Abraços da mamãe - saudades</p>
       </div>
       <div class="foto">
-        <a href="p20.jpg" class="zoom">
+        <a href="p20.jpg" class="zoom-paraquedista">
           <img src="p20.jpg" alt="Foto 20">
         </a>
         <p>Ricardo, olhando pra frente.</p>
       </div>
       <div class="foto">
-        <a href="p21.jpg" class="zoom">
+        <a href="p21.jpg" class="zoom-paraquedista">
           <img src="p21.jpg" alt="Foto 21">
         </a>
         <p>O abatido vencedor.</p>
@@ -198,5 +198,42 @@
       navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
     });
   </script>
+  
+  <script>
+  document.querySelectorAll('a.zoom-paraquedista').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const imgSrc = this.getAttribute('href');
+
+      const lightbox = document.createElement('div');
+      lightbox.classList.add('lightbox-paraquedista');
+
+      const img = document.createElement('img');
+      img.src = imgSrc;
+
+      img.addEventListener('click', ev => ev.stopPropagation());
+
+      lightbox.appendChild(img);
+      document.body.appendChild(lightbox);
+      document.body.classList.add('no-scroll');
+
+      lightbox.addEventListener('click', () => {
+        document.body.classList.remove('no-scroll');
+        document.body.removeChild(lightbox);
+      });
+
+      document.addEventListener('keydown', function escHandler(ev) {
+        if (ev.key === 'Escape') {
+          document.body.classList.remove('no-scroll');
+          if (document.body.contains(lightbox)) {
+            document.body.removeChild(lightbox);
+          }
+          document.removeEventListener('keydown', escHandler);
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
