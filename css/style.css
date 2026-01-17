@@ -803,5 +803,63 @@ body.no-scroll {
   overflow: hidden;
 }
 
+/* ===== Página Curso Paraquedista ===== */
+body.pagina-curso-paraquedista main {
+  padding: 20px;
+  text-align: center;
+}
 
+.titulo-curso {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+}
+
+.moldura-preta {
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.album-curso {
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.linha-fotos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.linha-fotos .foto {
+  text-align: center;
+}
+
+.linha-fotos .foto img {
+  display: block;
+  max-width: 100%;
+  height: auto; /* mantém tamanho original */
+}
+
+.linha-fotos .foto p {
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.linha-vermelha {
+  border: none;
+  border-top: 2px solid red;
+  margin: 20px 0;
+}
+
+/* Permitir zoom em celulares/tablets */
+html {
+  touch-action: manipulation;
+}
 
