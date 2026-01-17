@@ -739,7 +739,8 @@ body.pagina-paraquedista main {
 
 .album-paraquedista .foto img {
   width: 100%;
-  height: auto;
+  height: 200px;      /* altura fixa */
+  object-fit: cover;  /* corta proporcionalmente sem distorcer */
   display: block;
 }
 
