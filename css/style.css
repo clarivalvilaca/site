@@ -781,7 +781,7 @@ body.pagina-paraquedista main {
 }
 
 /* Lightbox da página Paraquedista */
-.lightbox-paraquedista {
+.pagina-paraquedista .lightbox-paraquedista {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
@@ -789,7 +789,7 @@ body.pagina-paraquedista main {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999; /* acima do rodapé */
+  z-index: 99999; /* bem acima de qualquer rodapé */
 }
 
 .lightbox-paraquedista img {
