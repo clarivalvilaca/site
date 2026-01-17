@@ -859,7 +859,8 @@ body.pagina-curso-paraquedista main {
 }
 
 /* Permitir zoom em celulares/tablets */
-html {
+body.pagina-curso-paraquedista {
   touch-action: manipulation;
 }
+
 
