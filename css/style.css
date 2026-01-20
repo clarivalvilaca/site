@@ -980,4 +980,118 @@ body.pagina-retorno-montanha .linha-vermelha-final {
   margin: 30px 0;
 }
 
+/* ===== Página Galeria Amigos ===== */
+body.pagina-galeria-amigos {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+.header-amigos {
+  background: #3f51b5;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo-amigos {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-amigos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-amigos ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-toggle-amigos {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Conteúdo principal */
+.main-amigos {
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo-amigos {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+}
+
+.intro-amigos {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Fotos */
+.foto-amigos {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.foto-amigos img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.foto-amigos p {
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: #333;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+/* Linha vermelha */
+.linha-amigos {
+  border: none;
+  border-top: 2px solid red;
+  margin: 20px 0;
+}
+
+.linha-amigos-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+/* Fotos lado a lado */
+.linha-fotos-amigos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Rodapé */
+.footer-amigos {
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #333;
+}
+
 
