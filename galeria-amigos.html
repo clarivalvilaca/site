@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>AQUI, MEUS AMIGOS - Clarival Vilaça</title>
-  <link rel="stylesheet" href="css/galeria-amigos.css">
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 </head>
 <body class="pagina-galeria-amigos">
 
   <!-- Cabeçalho padrão -->
-  <header class="header-amigos">
-    <div class="logo-amigos">Clarival Vilaça</div>
-    <nav class="nav-amigos">
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
       <ul>
         <li><a href="index.html">Voltar ao início</a></li>
         <li><a href="downloads.html">Downloads</a></li>
@@ -187,29 +187,23 @@ vida, de conhecimento. Fique em paz, meu amigo. </p>
     <div class="linha-amigos-final"></div>
   </main>
 
-  <!-- Rodapé padrão -->
-  <footer class="footer-amigos">
+   <footer>
     <p>Você é o visitante número:</p>
-    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
-    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
-    <noscript>
-      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
-    </noscript>
+    <!-- contador -->
     <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Script do menu hambúrguer -->
+  <!-- Script do menu hambúrguer igual ao retorno-montanha -->
   <script>
     const menuToggle = document.createElement('button');
-    menuToggle.classList.add('menu-toggle-amigos');
+    menuToggle.classList.add('menu-toggle');
     menuToggle.innerHTML = '☰';
-    document.querySelector('.header-amigos').prepend(menuToggle);
+    document.querySelector('header').prepend(menuToggle);
 
     menuToggle.addEventListener('click', () => {
-      const navUl = document.querySelector('.nav-amigos ul');
+      const navUl = document.querySelector('nav ul');
       navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
     });
   </script>
 </body>
 </html>
-
