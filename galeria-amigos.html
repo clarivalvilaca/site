@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>AQUI, MEUS AMIGOS - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-galeria-amigos">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Título -->
+    <h2 class="titulo-amigos">AQUI, MEUS AMIGOS</h2>
+
+    <!-- Texto introdutório -->
+    <p class="intro-amigos">
+      Aqui coloco uma seleção de fotos dos amigos que tenho. Infelizmente não tenho fotos de todos eles, por isso, a página não retrata com fidelidade a quantidade. Fico devendo os retratos de alguns que estão de fora.<br><br>
+      Estou cobrando deles as fotografias, espero que mas entreguem logo. Não estão colocados em ordem de importância, pois tenho igual estima por todos eles. E alguns que deveriam estar aqui, não estão porque não posso impor suas presenças em minha vida, infelizmente.<br><br>
+      Ei-los:
+    </p>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 1 + texto sobre amizade -->
+    <div class="foto">
+      <img src="a01.jpg" alt="Amigos 1">
+      <p>
+        A amizade é algo delicado, sutil, que não se quebra com facilidade, mas racha ao menor esforço [...]  
+        <br><br>
+        Vilaça [20/08/2000]
+      </p>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 2 -->
+    <div class="foto">
+      <img src="a02.jpg" alt="Amigos 2">
+      <p>Breve texto sobre esta amizade.</p>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 3 -->
+    <div class="foto">
+      <img src="a03.jpg" alt="Amigos 3">
+      <p>Breve texto sobre esta amizade.</p>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 4 e 5 lado a lado -->
+    <div class="linha-fotos">
+      <div class="foto"><img src="a04.jpg" alt="Amigos 4"><p>Texto sobre amizade 4</p></div>
+      <div class="foto"><img src="a05.jpg" alt="Amigos 5"><p>Texto sobre amizade 5</p></div>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 6 -->
+    <div class="foto">
+      <img src="a06.jpg" alt="Amigos 6">
+      <p>Breve texto sobre esta amizade.</p>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 7 -->
+    <div class="foto">
+      <img src="a07.jpg" alt="Amigos 7">
+      <p>Breve texto sobre esta amizade.</p>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 8 -->
+    <div class="foto">
+      <img src="a08.jpg" alt="Amigos 8">
+      <p>Breve texto sobre esta amizade.</p>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 9 -->
+    <div class="foto">
+      <img src="a09.jpg" alt="Amigos 9">
+      <p>Breve texto sobre esta amizade.</p>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 10 -->
+    <div class="foto">
+      <img src="a10.jpg" alt="Amigos 10">
+      <p>Breve texto sobre esta amizade.</p>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <!-- Foto 11 -->
+    <div class="foto">
+      <img src="a11.jpg" alt="Amigos 11">
+      <p>Breve texto sobre esta amizade.</p>
+    </div>
+
+    <hr class="linha-vermelha-final">
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
