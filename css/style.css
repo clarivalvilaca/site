@@ -1121,7 +1121,7 @@ body.pagina-foto-guilherme .foto-central img {
 body.pagina-foto-guilherme .texto-foto {
   margin: 15px auto;
   max-width: 700px;
-  text-align: justify;
+  text-align: center;
   line-height: 1.6;
 }
 
