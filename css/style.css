@@ -1124,9 +1124,16 @@ body.pagina-foto-guilherme .titulo-foto {
 body.pagina-foto-guilherme .foto-central img {
   display: block;
   margin: 0 auto;
-  max-width: 90%;   /* limita a largura no celular */
+  max-width: 600px;   /* limite no desktop */
   height: auto;
   border-radius: 4px;
+}
+
+/* Responsivo: mobile */
+@media (max-width: 768px) {
+  body.pagina-foto-guilherme .foto-central img {
+    max-width: 95%;   /* ocupa quase toda a tela, mas não ultrapassa */
+  }
 }
 
 /* Texto */
