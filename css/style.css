@@ -1094,4 +1094,116 @@ body.pagina-galeria-amigos {
   color: #333;
 }
 
+/* ===== Página Foto Guilherme ===== */
+body.pagina-foto-guilherme {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+
+/* Cabeçalho */
+body.pagina-foto-guilherme header {
+  background: #3f51b5;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.pagina-foto-guilherme .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+body.pagina-foto-guilherme nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+body.pagina-foto-guilherme nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Menu hambúrguer */
+body.pagina-foto-guilherme .menu-toggle {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: none; /* escondido no desktop */
+}
+
+/* Conteúdo principal */
+body.pagina-foto-guilherme main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-foto-guilherme .linha-cinza {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+}
+
+body.pagina-foto-guilherme .titulo-foto {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+}
+
+body.pagina-foto-guilherme .foto-central img {
+  display: block;
+  margin: 0 auto;
+  /* tamanho original */
+}
+
+body.pagina-foto-guilherme .texto-foto {
+  margin: 15px auto;
+  max-width: 700px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+body.pagina-foto-guilherme .link-voltar a {
+  color: #3f51b5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body.pagina-foto-guilherme .link-voltar a:hover {
+  text-decoration: underline;
+}
+
+body.pagina-foto-guilherme .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+/* Rodapé */
+body.pagina-foto-guilherme footer {
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Responsivo: mobile mostra hambúrguer */
+@media (max-width: 768px) {
+  body.pagina-foto-guilherme .menu-toggle { display: inline-block; }
+  body.pagina-foto-guilherme nav ul { display: none; }
+}
+
 
