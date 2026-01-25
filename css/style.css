@@ -1295,6 +1295,68 @@ body.pagina-benedito footer {
   body.pagina-benedito .foto-central img { max-width: 95%; }
 }
 
+/* ===== Página Álvaro ===== */
+body.pagina-alvaro main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-alvaro .linha-cinza {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+}
+
+body.pagina-alvaro .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+body.pagina-alvaro .titulo-foto {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+}
+
+body.pagina-alvaro .foto-central img {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;   /* limite no desktop */
+  height: auto;
+  border-radius: 4px;
+}
+
+body.pagina-alvaro .texto-foto {
+  margin: 15px auto;
+  max-width: 700px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+body.pagina-alvaro .link-voltar a {
+  color: #3f51b5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body.pagina-alvaro .link-voltar a:hover {
+  text-decoration: underline;
+}
+
+body.pagina-alvaro header,
+body.pagina-alvaro footer {
+  width: 100%;
+}
+
+/* Responsivo: mobile */
+@media (max-width: 768px) {
+  body.pagina-alvaro .menu-toggle { display: inline-block; }
+  body.pagina-alvaro nav ul { display: none; }
+  body.pagina-alvaro .titulo-foto { font-size: 1.6em; }
+  body.pagina-alvaro .texto-foto { font-size: 0.95em; }
+  body.pagina-alvaro .foto-central img { max-width: 95%; }
+}
 
 
 
