@@ -1100,31 +1100,44 @@ body.pagina-foto-guilherme main {
   text-align: center;
 }
 
+/* Linha cinza e vermelha */
 body.pagina-foto-guilherme .linha-cinza {
   border: none;
   border-top: 1px solid #999;
   margin: 20px 0;
 }
 
+body.pagina-foto-guilherme .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+/* Título */
 body.pagina-foto-guilherme .titulo-foto {
   font-size: 2em;
   margin: 20px 0;
   color: #000;
 }
 
+/* Foto central */
 body.pagina-foto-guilherme .foto-central img {
   display: block;
   margin: 0 auto;
-  /* exibe no tamanho original */
+  max-width: 90%;   /* limita a largura no celular */
+  height: auto;
+  border-radius: 4px;
 }
 
+/* Texto */
 body.pagina-foto-guilherme .texto-foto {
   margin: 15px auto;
   max-width: 700px;
-  text-align: center;
+  text-align: center;   /* centralizado */
   line-height: 1.6;
 }
 
+/* Link voltar */
 body.pagina-foto-guilherme .link-voltar a {
   color: #3f51b5;
   font-weight: bold;
@@ -1135,11 +1148,20 @@ body.pagina-foto-guilherme .link-voltar a:hover {
   text-decoration: underline;
 }
 
-body.pagina-foto-guilherme .linha-vermelha-final {
-  border: none;
-  border-top: 4px solid red;
-  margin: 30px 0;
+/* Cabeçalho e rodapé ocupando largura total */
+body.pagina-foto-guilherme header,
+body.pagina-foto-guilherme footer {
+  width: 100%;
 }
+
+/* Responsivo: mobile */
+@media (max-width: 768px) {
+  body.pagina-foto-guilherme .menu-toggle { display: inline-block; }
+  body.pagina-foto-guilherme nav ul { display: none; }
+  body.pagina-foto-guilherme .titulo-foto { font-size: 1.6em; }
+  body.pagina-foto-guilherme .texto-foto { font-size: 0.95em; }
+}
+
 
 
 
