@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Alcântara - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-alcantara">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <hr class="linha-cinza">
+
+    <h2 class="titulo-foto">Meu Canto em Prosa e Verso - Clarival Vilaça</h2>
+
+    <div class="moldura-texto">
+      <p>
+        1954<br><br>
+        Chegando em Alcântara, antes de cruzar uma enorme ponte de ferro pintada em preto, o bonde vinha pela direita e olhando para a esquerda, do outro lado da rua, via-se a Eletroquímica, uma enorme construção toda pintada de azul e que ocupava toda a área onde hoje se erguem edifícios do aglomerado conhecido como "Alcântara Um". Não sei exatamente que produtos químicos eram produzidos ali.  
+        <br><br>
+        Embora a construção se erguesse bem junto aos muros, estes eram bastante altos para impedir a visão do interior. No portão principal, sempre fechado, havia uma pequena entrada para os funcionários. Tudo parecia muito misterioso, principalmente na mente de uma criança de 10, 12 anos.  
+        <br><br>
+        No bonde, chegando ao Alcântara e olhando para a direita, via-se um muro cercando um grande terreno onde se erguia uma pequena montanha de pedra e sobre ela, um casario do qual se podia divisar uma cerca de metal, que devia estar circundando uma quadra de esportes. Presumia-se que ali moravam os proprietários da indústria química.  
+        <br><br>
+        Pode-se definir a extensão do lugar, informando que no mesmo local hoje, vemos o prédio da Caixa Econômica federal (ali se localizava uma repartição do DNER - um depósito de máquina e veículos), o ITAÚ, o Banco do Brasil e um conjunto residencial da Marinha, tudo construído ao sopé e em torno do monte.  
+        <br><br>
+        O bonde quase sempre trazia um reboque chamada de "bagageiro", pois embora tivesse bancos à frente e atrás, o centro do veículo ficava vazio, para que ali fossem colocados embrulhos, pacotes e cestos (jacás), ou mesmo cachos de banana. Pois o comércio local utilizava os bondes para transferir mercadorias entre Alcântara, São Gonçalo, Barreto e Niterói, passando ainda por Neves e Paraíso. Alcântara era conhecido como "Rodo de Alcântara", assim como São Gonçalo era chamada de "Rodo", simplesmente.  
+        <br><br>
+        Assim, quando alguém dizia: "vou ao Rodo", estava indo a São Gonçalo. O termo se refere ao fato dos bondes realizarem um círculo quando chegavam ao centro da cidade, retomando o trajeto para retornar. Na época não havia pavimentação, o local era todo de terra batida vermelha e quando chovia, os bondes ficavam extremamente sujos, pois todos limpavam os sapatos nos estribos (espécie de degraus de madeira para embarque no bonde).
+      </p>
+    </div>
+
+    <p class="link-voltar">
+      <a href="quem-sou-eu.html">voltar ao texto</a>
+    </p>
+
+    <hr class="linha-vermelha-final">
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
