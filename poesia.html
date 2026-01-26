@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Recanto da Poesia - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-poesia">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-foto">RECANTO DA POESIA</h2>
+    <hr class="linha-vermelha-fina">
+
+    <div class="moldura-introducao">
+      <p>
+        Desde muito jovem, eu escrevia pequenas histórias, muitos versos, muita coisa de improviso. 
+        Por fim, com o advento do microcomputador, passei a guardar tudo que escrevia. 
+        Dessa coletânea nasceram alguns livros. Alguma coisa está aqui, nesta página.  
+        Escolha abaixo, os assuntos que mais lhe interessarem:
+      </p>
+    </div>
+
+    <h3 class="subtitulo">Verso</h3>
+    <div class="botoes-poesia">
+      <button onclick="location.href='meus-poemas.html'">Meus Poemas</button>
+      <button onclick="location.href='selecionados.html'">Selecionados</button>
+    </div>
+
+    <hr class="linha-cinza">
+
+    <h3 class="subtitulo">Prosa</h3>
+    <div class="botoes-poesia">
+      <button onclick="location.href='meus-contos.html'">Meus Contos</button>
+      <button onclick="location.href='contos-especiais.html'">Meus Contos Especiais</button>
+    </div>
+
+    <hr class="linha-vermelha-final">
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
