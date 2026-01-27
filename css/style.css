@@ -1620,11 +1620,8 @@ body.pagina-selecionados .linha-cinza,
 body.pagina-selecionados .linha-vermelha-final {
   border: none;
   display: block;
-  width: 100vw;              /* ocupa toda a largura da janela */
+  width: 100%;       /* ocupa toda a largura do container */
   margin: 20px 0;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); /* garante alinhamento correto */
 }
 
 body.pagina-selecionados .linha-cinza {
