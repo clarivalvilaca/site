@@ -1742,4 +1742,61 @@ body.pagina-meus-contos footer {
   body.pagina-meus-contos .moldura-conto { max-width: 95%; }
 }
 
+/* ===== Página Aviso Erótico ===== */
+body.pagina-aviso-erotico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+body.pagina-aviso-erotico .aviso-container {
+  background-color: #222;
+  border: 2px solid red;
+  padding: 30px;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+body.pagina-aviso-erotico h2 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+body.pagina-aviso-erotico p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+body.pagina-aviso-erotico .botoes-aviso a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body.pagina-aviso-erotico .btn-entrar {
+  background-color: red;
+  color: #fff;
+}
+
+body.pagina-aviso-erotico .btn-sair {
+  background-color: gray;
+  color: #fff;
+}
+
+body.pagina-aviso-erotico .btn-entrar:hover {
+  background-color: darkred;
+}
+
+body.pagina-aviso-erotico .btn-sair:hover {
+  background-color: #555;
+}
+
 
