@@ -1500,3 +1500,98 @@ body.pagina-poesia .botoes-poesia button:hover {
   body.pagina-poesia .botoes-poesia { flex-direction: column; }
 }
 
+/* ===== Página Meus Poemas ===== */
+body.pagina-meus-poemas main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-meus-poemas .gif-topo img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+body.pagina-meus-poemas .player-musica {
+  margin: 20px auto;
+  text-align: center;
+}
+
+body.pagina-meus-poemas .texto-musica {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+body.pagina-meus-poemas .linha-vermelha {
+  border: none;
+  border-top: 2px solid red;
+  margin: 20px 0;
+}
+
+body.pagina-meus-poemas .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+body.pagina-meus-poemas .titulo-foto {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+}
+
+body.pagina-meus-poemas .foto-central img {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  height: auto;
+  border-radius: 4px;
+}
+
+body.pagina-meus-poemas .texto-foto {
+  margin: 15px auto;
+  max-width: 700px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+body.pagina-meus-poemas .titulo-poema {
+  font-size: 1.4em;
+  margin: 20px 0 10px;
+  text-decoration: underline;
+}
+
+body.pagina-meus-poemas .poema {
+  text-align: left;
+  margin: 0 auto 20px;
+  max-width: 700px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+body.pagina-meus-poemas .aviso {
+  font-size: 0.9em;
+  color: #444;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: center;
+  font-style: italic;
+}
+
+body.pagina-meus-poemas header,
+body.pagina-meus-poemas footer {
+  width: 100%;
+}
+
+/* Responsivo: mobile */
+@media (max-width: 768px) {
+  body.pagina-meus-poemas .menu-toggle { display: inline-block; }
+  body.pagina-meus-poemas nav ul { display: none; }
+  body.pagina-meus-poemas .titulo-foto { font-size: 1.6em; }
+  body.pagina-meus-poemas .texto-foto { font-size: 0.95em; }
+  body.pagina-meus-poemas .poema { font-size: 0.95em; }
+  body.pagina-meus-poemas .foto-central img { max-width: 95%; }
+}
+
