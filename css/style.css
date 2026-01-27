@@ -1663,4 +1663,83 @@ body.pagina-selecionados footer {
   body.pagina-selecionados .poema { font-size: 0.9em; max-width: 95%; }
 }
 
+/* ===== Página Meus Contos ===== */
+body.pagina-meus-contos main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-meus-contos .titulo-foto {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+  text-align: center;
+}
+
+body.pagina-meus-contos .texto-introducao {
+  margin: 15px auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Linha vermelha inicial */
+body.pagina-meus-contos .linha-vermelha {
+  border: none;
+  border-top: 2px solid red;
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+}
+
+/* Moldura do conto */
+body.pagina-meus-contos .moldura-conto {
+  border: 1px solid #000;
+  background-color: #d3d3d3; /* cinza claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+
+body.pagina-meus-contos .titulo-poema {
+  font-size: 1.4em;
+  margin: 20px 0 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+body.pagina-meus-contos .poema {
+  margin: 0 auto 20px;
+  max-width: 800px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Linha vermelha final */
+body.pagina-meus-contos .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+}
+
+body.pagina-meus-contos header,
+body.pagina-meus-contos footer {
+  width: 100%;
+}
+
+/* Responsivo: mobile */
+@media (max-width: 768px) {
+  body.pagina-meus-contos .menu-toggle { display: inline-block; }
+  body.pagina-meus-contos nav ul { display: none; }
+  body.pagina-meus-contos .titulo-foto { font-size: 1.4em; }
+  body.pagina-meus-contos .texto-introducao { font-size: 0.9em; max-width: 95%; }
+  body.pagina-meus-contos .poema { font-size: 0.9em; max-width: 95%; }
+  body.pagina-meus-contos .moldura-conto { max-width: 95%; }
+}
+
 
