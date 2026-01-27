@@ -1799,4 +1799,143 @@ body.pagina-aviso-erotico .btn-sair:hover {
   background-color: #555;
 }
 
+/* ===== Página Contos Especiais ===== */
+body.pagina-contos-especiais main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-contos-especiais .titulo-foto {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+  text-align: center;
+}
+
+body.pagina-contos-especiais .texto-introducao {
+  margin: 15px auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Legenda de navegação */
+body.pagina-contos-especiais .legenda-contos {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+body.pagina-contos-especiais .legenda-contos ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+body.pagina-contos-especiais .legenda-contos li {
+  display: inline-block;
+  margin: 0 10px;
+}
+body.pagina-contos-especiais .legenda-contos a {
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+}
+body.pagina-contos-especiais .legenda-contos a:hover {
+  text-decoration: underline;
+}
+
+/* Linhas */
+body.pagina-contos-especiais .linha-cinza {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+}
+body.pagina-contos-especiais .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+}
+
+/* Molduras */
+body.pagina-contos-especiais .moldura-azul {
+  border: 1px solid #000;
+  background-color: #add8e6; /* azul claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+body.pagina-contos-especiais .moldura-cinza {
+  border: 1px solid #000;
+  background-color: #d3d3d3; /* cinza claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+
+/* Títulos dos contos */
+body.pagina-contos-especiais .titulo-poema {
+  font-size: 1.4em;
+  margin: 20px 0 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Texto dos contos */
+body.pagina-contos-especiais .poema {
+  margin: 0 auto 20px;
+  max-width: 800px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Botão "Quer mais?" */
+body.pagina-contos-especiais .link-quer-mais {
+  margin: 30px 0;
+}
+body.pagina-contos-especiais .btn-quer-mais {
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+body.pagina-contos-especiais .btn-quer-mais:hover {
+  background-color: darkred;
+}
+
+/* Aviso final */
+body.pagina-contos-especiais .aviso {
+  font-size: 0.9em;
+  color: #444;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: center;
+  font-style: italic;
+}
+
+body.pagina-contos-especiais header,
+body.pagina-contos-especiais footer {
+  width: 100%;
+}
+
+/* Responsivo: mobile */
+@media (max-width: 768px) {
+  body.pagina-contos-especiais .menu-toggle { display: inline-block; }
+  body.pagina-contos-especiais nav ul { display: none; }
+  body.pagina-contos-especiais .titulo-foto { font-size: 1.4em; }
+  body.pagina-contos-especiais .texto-introducao { font-size: 0.9em; max-width: 95%; }
+  body.pagina-contos-especiais .poema { font-size: 0.9em; max-width: 95%; }
+  body.pagina-contos-especiais .moldura-azul,
+  body.pagina-contos-especiais .moldura-cinza { max-width: 95%; }
+}
+
 
