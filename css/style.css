@@ -1619,14 +1619,14 @@ body.pagina-selecionados .linha-cinza {
   border: none;
   border-top: 1px solid #999;
   margin: 20px 0;
-  max-width: 800px;
+  width: 100%;
 }
 
 body.pagina-selecionados .linha-vermelha-final {
   border: none;
   border-top: 4px solid red;
   margin: 30px 0;
-  max-width: 800px;
+  width: 100%;
 }
 
 body.pagina-selecionados .titulo-poema {
