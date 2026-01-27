@@ -1605,12 +1605,13 @@ body.pagina-selecionados .titulo-foto {
   font-size: 2em;
   margin: 20px 0;
   color: #000;
+  text-align: center;
 }
 
 body.pagina-selecionados .texto-introducao {
   margin: 15px auto;
-  max-width: 700px;
-  text-align: justify;
+  max-width: 800px;
+  text-align: center;
   line-height: 1.6;
 }
 
@@ -1618,27 +1619,30 @@ body.pagina-selecionados .linha-cinza {
   border: none;
   border-top: 1px solid #999;
   margin: 20px 0;
+  max-width: 800px;
 }
 
 body.pagina-selecionados .linha-vermelha-final {
   border: none;
   border-top: 4px solid red;
   margin: 30px 0;
+  max-width: 800px;
 }
 
 body.pagina-selecionados .titulo-poema {
   font-size: 1.4em;
   margin: 20px 0 10px;
   text-decoration: underline;
+  text-align: center;
 }
 
 body.pagina-selecionados .poema {
-  text-align: left;
   margin: 0 auto 20px;
-  max-width: 700px;
+  max-width: 800px;
   font-family: "Courier New", monospace;
   white-space: pre-wrap;
   line-height: 1.6;
+  text-align: center;
 }
 
 body.pagina-selecionados header,
@@ -1650,8 +1654,8 @@ body.pagina-selecionados footer {
 @media (max-width: 768px) {
   body.pagina-selecionados .menu-toggle { display: inline-block; }
   body.pagina-selecionados nav ul { display: none; }
-  body.pagina-selecionados .titulo-foto { font-size: 1.6em; }
-  body.pagina-selecionados .texto-introducao { font-size: 0.95em; }
-  body.pagina-selecionados .poema { font-size: 0.95em; }
+  body.pagina-selecionados .titulo-foto { font-size: 1.4em; }
+  body.pagina-selecionados .texto-introducao { font-size: 0.9em; max-width: 95%; }
+  body.pagina-selecionados .poema { font-size: 0.9em; max-width: 95%; }
 }
 
