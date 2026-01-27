@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Textos Selecionados - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-selecionados">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-foto">Textos Selecionados</h2>
+    <p class="texto-introducao">
+      Selecionei aqui alguns textos oriundos da Internet. Não adiantaria muito colocar o
+      nome de quem os garimpou na rede, pois não são os reais autores dos trabalhos. Quando
+      houver menção ao criador do texto, ele será identificado ao fim deste.
+    </p>
+
+    <hr class="linha-cinza">
+
+    <!-- Texto O Valor do Tempo -->
+    <h3 class="titulo-poema">O Valor do Tempo</h3>
+    <pre class="poema">
+Para você entender o valor de um ano: pergunte a um estudante que não
+passou nos exames finais.
+
+Para você entender o valor de um mês: pergunte a uma mãe que teve um
+filho prematuro.
+
+Para você entender o valor de uma semana: pergunte ao editor de uma
+revista semanal.
+
+Para você entender o valor de uma hora: pergunte aos apaixonados que
+estão esperando o momento do encontro.
+
+Para você entender o valor de um minuto: pergunte a uma pessoa que
+perdeu o trem, o ônibus ou avião.
+
+Para você entender o valor de um segundo: pergunte a alguém que sobreviveu a um acidente.
+
+Para você entender o valor de um milissegundo: pergunte a um ganhador
+de uma medalha de prata numa olimpíada.
+    </pre>
+
+    <hr class="linha-cinza">
+
+    <!-- Texto Página em Construção -->
+    <h3 class="titulo-poema">Página em Construção</h3>
+    <pre class="poema">
+Deus deixou várias coisas para terminar, de modo que o homem possa exercer suas habilidades.
+Deixou a eletricidade na nuvem e o óleo no fundo da terra.
+Criou os rios sem pontes, as florestas sem estradas, os campos sem casas.
+Deixou as pinturas do lado de fora dos quadros, os sentimentos para serem descritos,
+as montanhas para serem conquistadas, os problemas para serem resolvidos.
+Deus deixou várias coisas para terminar, de modo que o homem possa compartilhar
+a alegria da criação.
+    </pre>
+
+    <hr class="linha-vermelha-final">
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
