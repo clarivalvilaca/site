@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meus Poemas - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-meus-poemas">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Gif no topo -->
+    <div class="gif-topo">
+      <img src="poesia.gif" alt="Gif de poesia animada">
+    </div>
+
+    <!-- Player de música -->
+    <div class="player-musica">
+      <audio controls>
+        <source src="coisas-do-brasil.mp3" type="audio/mpeg">
+        Seu navegador não suporta o player de áudio.
+      </audio>
+      <p class="texto-musica">Faça a leitura ao som de "Coisas do Brasil"</p>
+    </div>
+
+    <hr class="linha-vermelha">
+
+    <h2 class="titulo-foto">Meus Poemas</h2>
+
+    <div class="foto-central">
+      <img src="poemas.jpg" alt="Imagem ilustrativa de poemas">
+    </div>
+    <p class="texto-foto">
+      Uma breve seleção de versinhos que fiz e que talvez agradem aos amantes da poesia.
+    </p>
+
+    <hr class="linha-vermelha">
+
+    <!-- Poema OLHARES -->
+    <h3 class="titulo-poema">OLHARES</h3>
+    <pre class="poema">
+Se me olhares, vou corar
+Sou acanhado contigo
+Se sorrires ao me olhar
+Eu me sentirei perdido
+
+Teu olhar é céu profundo
+É teu sorriso quem diz
+Se te vejo eu tenho o mundo
+Se sorris eu sou feliz
+
+Acanhado mas te amando,
+O ciúme cai-me bem
+Penso ter-te sempre e quando
+
+Te vejo olhando outro alguém
+Sinto um punhal penetrando
+Matando quem não te tem ...
+
+(Vilaça)  15/03/97
+    </pre>
+
+    <hr class="linha-vermelha">
+
+    <!-- Poema O GENERAL -->
+    <h3 class="titulo-poema">O GENERAL</h3>
+    <pre class="poema">
+É de manhã, lá vem o General
+A tropa espera imóvel, perfilada
+para a continência matinal,
+àquela autoridade, engalanada.
+
+É assim que ocorre todo dia,
+O General sorri e cumprimenta
+Àqueles que o veem como um guia
+E lhe dão o poder que o sustenta
+
+Um dia, tudo irá terminar
+Perdendo ele o poder que ostenta
+Vai pra sua casa, descansar...
+
+Esquecer que houve mudanças, ele tenta
+Mas ele não é nada, então pra que lutar
+Pois se nem o jornaleiro o cumprimenta?
+
+Vilaça  (30/05/98)
+    </pre>
+
+    <hr class="linha-vermelha-final">
+
+    <p class="aviso">
+      Os trabalhos aqui expostos estão protegidos. Não é autorizada cópia/reprodução, 
+      assim como alterações de qualquer tipo sem consulta prévia ao autor.
+    </p>
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
