@@ -1944,5 +1944,143 @@ body.pagina-contos-especiais footer {
   body.pagina-contos-especiais .moldura-cinza { max-width: 95%; }
 }
 
+/* ===== Página Quer Mais ===== */
+body.pagina-quer-mais main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-quer-mais .titulo-foto {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #000;
+  text-align: center;
+}
+
+body.pagina-quer-mais .texto-introducao {
+  margin: 15px auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Legenda */
+body.pagina-quer-mais .legenda-contos {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+body.pagina-quer-mais .legenda-contos ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+body.pagina-quer-mais .legenda-contos li {
+  display: inline-block;
+  margin: 0 10px;
+}
+body.pagina-quer-mais .legenda-contos a {
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+}
+body.pagina-quer-mais .legenda-contos a:hover {
+  text-decoration: underline;
+}
+
+/* Linhas */
+body.pagina-quer-mais .linha-cinza {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+}
+body.pagina-quer-mais .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+}
+
+/* Molduras */
+body.pagina-quer-mais .moldura-azul {
+  border: 1px solid #000;
+  background-color: #add8e6; /* azul claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+body.pagina-quer-mais .moldura-cinza {
+  border: 1px solid #000;
+  background-color: #d3d3d3; /* cinza claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+body.pagina-quer-mais .moldura-vermelha {
+  border: 1px solid #000;
+  background-color: #f08080; /* vermelho claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+/* Títulos dos contos */
+body.pagina-quer-mais .titulo-poema {
+  font-size: 1.4em;
+  margin: 20px 0 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Texto dos contos */
+body.pagina-quer-mais .poema {
+  margin: 0 auto 20px;
+  max-width: 800px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Aviso final */
+body.pagina-quer-mais .aviso {
+  font-size: 0.9em;
+  color: #444;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: center;
+  font-style: italic;
+}
+
+body.pagina-quer-mais header,
+body.pagina-quer-mais footer {
+  width: 100%;
+}
+
+/* Responsivo: mobile */
+@media (max-width: 768px) {
+  body.pagina-quer-mais {
+    overflow-x: hidden; /* elimina rolagem lateral */
+  }
+  body.pagina-quer-mais .menu-toggle { display: inline-block; }
+  body.pagina-quer-mais nav ul { display: none; }
+  body.pagina-quer-mais .titulo-foto { font-size: 1.4em; }
+  body.pagina-quer-mais .texto-introducao { font-size: 0.9em; max-width: 95%; }
+  body.pagina-quer-mais .poema { font-size: 0.9em; max-width: 95%; }
+  body.pagina-quer-mais .moldura-azul,
+  body.pagina-quer-mais .moldura-cinza,
+  body.pagina-quer-mais .moldura-vermelha { max-width: 95%; }
+}
+
 
 
