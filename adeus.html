@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Todos Dizem Adeus - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-adeus">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- GIF superior -->
+    <div class="gif-topo">
+      <img src="imagens/gif-topo.gif" alt="GIF superior decorativo">
+    </div>
+
+    <h2 class="titulo-foto">
+      Todos Dizem Adeus<br>
+      (Do meu livro)
+    </h2>
+
+    <hr class="linha-verde">
+
+    <!-- Texto 1 -->
+    <div class="moldura-cinza">
+      <h3 class="titulo-poema">A CARTEIRA</h3>
+      <pre class="poema">
+Dia de pagamento (o que o pessoal de Greenville jamais dirá, no seu inglês da caatinga). Rosivaldo pegou seu envelope com os 740 reais e, dobrando cuidadosamente, o enfiou na carteira, que foi para o bolso de trás das calças.
+
+Tomou seu habitual ônibus e foi pra casa. Durante o trajeto,fazia mentalmente as contas do que teria que pagar: luz, armazém,  aluguel, etc.
+
+Ainda pensativo saltou do coletivo e se sentiu leve. Levou a mão ao bolso e...a carteira havia sumido. Correu, mas não alcançou o veículo, que logo dobrou a esquina.
+
+Tomou outro ônibus e foi até ao ponto final do coletivo que utilizara. Ele já havia chegado e saído novamente. Interrogou motoristas, trocadores, fiscais e despachantes, mas ninguém sabia nada sobre sua carteira.
+
+Como havia embarcado no meio do caminho, ficou difícil determinar em que carro ele havia viajado.
+
+Desolado,dirigiu-se à garagem da empresa proprietária dos ônibus daquela linha, explicou seu caso ao encarregado e foi autoriza do a revistar cada carro que chegasse para ser recolhido.
+
+Eram onze horas da noite quando finalmente Rosivaldo,  achou seu ônibus. Cansado, com fome, revistava cada poltrona próxima ao local onde se lembrava de ter sentado quando viu algo   familiar, entre o encosto e o assento de um dos bancos. Era sua carteira.
+
+Não acreditando em sua sorte,  pegou o envelope de dentro  da carteira, contou seu dinheiro, recontou, dobrou o envelope cuidadosamente e guardou com carinho.
+
+Só então parou de suar, seu coração voltou a bater compassadamente e ele, trôpego, se afastou acenando agradecido para o encarregado da garagem.
+
+No ponto de ônibus, recomeçou a fazer contas mentalmente,quando ouviu uma voz às suas costas:
+
+- Não se mexa, é um assalto. Passa tudo, rápido.
+      </pre>
+    </div>
+
+    <hr class="linha-verde">
+
+    <!-- Texto 2 -->
+    <div class="moldura-cinza">
+      <h3 class="titulo-poema">UM TREM DISTANTE</h3>
+      <pre class="poema">
+Preciso ver de novo um trem de ferro
+Espargindo nuvens de vapor
+Ouvi-lo, se movendo, eu quero
+E estando perto, ouvir o seu tremor
+
+Quero ver um trem de ferro novamente
+Imóvel na pequena estação
+O velho maquinista sorridente
+Me comoveria o coração
+
+Preciso ver de novo esse trem,
+Da locomotiva, sentir o calor,
+Numa emoção que me faria bem ...
+
+Não peço minha infância, meu vigor,
+Apenas lembrar que um dia fui alguém.
+Me leve ao meu passado, condutor...
+      </pre>
+    </div>
+
+    <!-- GIF inferior -->
+    <div class="gif-baixo">
+      <img src="imagens/gif-baixo.gif" alt="GIF inferior decorativo">
+    </div>
+
+    <hr class="linha-vermelha-final">
+
+    <p class="aviso">
+      À medida que minha página progrida, pretendo inserir mais e mais trabalhos meus aqui. 
+      Será uma forma de dividir com todos vocês, os meus sentimentos.
+    </p>
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
