@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meus Livros - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-meus-livros">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="poesia.html">Poesia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-foto">Meu canto em Prosa e verso</h2>
+    <h3 class="subtitulo">Meus Livros</h3>
+
+    <hr class="linha-vermelha">
+
+    <h3 class="titulo-secao">AQUI ESTÃO MEUS LIVROS:</h3>
+
+    <!-- Livro 1 -->
+    <div class="moldura-preta">
+      <h4 class="titulo-livro">Estranha Viagem ao Século XIX</h4>
+      <p class="texto-livro">
+        O personagem é apaixonado pelas histórias de Mark Twain e gosta do livro "Um Ianque na Corte do Rei Artur". 
+        Ele trabalha numa fábrica de tintas e num belo dia, lhe cai na cabeça uma lata e quando ele acorda do desmaio, 
+        está numa fazenda, em 1800 e poucos, onde encarna um coronel, dono de muitos escravos. 
+        Ele então tenta mudar a vida de todos e... <a href="livro-estranha-viagem.html">LER MAIS</a>
+      </p>
+    </div>
+
+    <hr class="linha-cinza">
+
+    <!-- Livro 2 -->
+    <div class="moldura-cinza">
+      <h4 class="titulo-livro">Quem Matou Caldwel?</h4>
+      <p class="texto-livro">
+        Caldwel fez sua fortuna durante a guerra do Vietnam, praticando contrabando e outros ilícitos. 
+        Mais de 20 anos depois da guerra, rico e morando em Boston, é assassinado. 
+        Um detetive particular, contratado pela viúva, tenta descobrir toda a trama e expor o criminoso... <a href="#">LER MAIS</a>
+      </p>
+    </div>
+
+    <hr class="linha-cinza">
+
+    <!-- Livro 3 -->
+    <div class="moldura-cinza">
+      <h4 class="titulo-livro">Todos Dizem Adeus</h4>
+      <p class="texto-livro">
+        Uma coletânea de todos aqueles textos e poemas que enviei para o Centroin BBS em forma de mensagens de e-mail... <a href="#">SAIBA MAIS</a>
+      </p>
+    </div>
+
+    <hr class="linha-cinza">
+
+    <!-- Livro 4 -->
+    <div class="moldura-cinza">
+      <h4 class="titulo-livro">Quem Matou Manuela?</h4>
+      <p class="texto-livro">
+        Uma empresária de sucesso morre envenenada. Suicídio ou crime? 
+        Vários são os suspeitos, incluindo seus irmãos. 
+        Disponível para leitura <a href="#">clicando aqui</a>.
+      </p>
+    </div>
+
+    <hr class="linha-cinza">
+
+    <!-- Livro 5 -->
+    <div class="moldura-cinza">
+      <h4 class="titulo-livro">Do Outro Lado do Universo</h4>
+      <p class="texto-livro">
+        O Planeta Z-2, do sistema Zenac, será atingido em 22 meses pelo cometa Hanz, descoberto pelo professor Efram, bem além de Eta Carina. 
+        Como salvar o planeta? Uma nave usa o teletransporte e vai ao outro lado do universo, 
+        onde se supõe exista um planeta que apresenta condições para abrigar uma possível migração... <a href="#">LER MAIS</a>
+      </p>
+    </div>
+
+    <hr class="linha-cinza">
+
+    <!-- Livro 6 -->
+    <div class="moldura-cinza">
+      <h4 class="titulo-livro">Sem Título (ainda não terminado)</h4>
+      <p class="texto-livro">
+        Biografia do autor (Eu! Eu!), cobrindo uma parte específica de sua vida. 
+        Ele mistura realidade com ficção incluindo aí uma tentativa de assassinato praticada pelo autor a serviço do...(ficção ou realidade?) <a href="#">SAIBA MAIS</a>
+      </p>
+    </div>
+
+    <hr class="linha-vermelha-final">
+
+    <p class="aviso">
+      Os trabalhos aqui expostos estão protegidos. Não é autorizada cópia/reprodução, 
+      assim como alterações de qualquer tipo sem consulta prévia ao autor.
+    </p>
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
