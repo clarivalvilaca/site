@@ -2439,4 +2439,77 @@ body.pagina-adeus footer {
   body.pagina-adeus .moldura-cinza { max-width: 95%; }
 }
 
+/* ===== Página Manuela ===== */
+body.pagina-manuela main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-manuela .titulo-foto {
+  font-size: 1.8em;
+  margin: 20px 0;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Linhas */
+body.pagina-manuela .linha-vermelha {
+  border: none;
+  border-top: 2px solid red;
+  margin: 20px 0;
+}
+body.pagina-manuela .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+/* Moldura */
+body.pagina-manuela .moldura-cinza {
+  border: 1px solid #000;
+  background-color: #dcdcdc;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+/* Texto */
+body.pagina-manuela .poema {
+  margin: 0 auto 20px;
+  max-width: 800px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Link de download */
+body.pagina-manuela .download-link {
+  margin: 20px auto;
+  text-align: center;
+}
+body.pagina-manuela .download-link a {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+body.pagina-manuela .download-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  body.pagina-manuela {
+    overflow-x: hidden;
+  }
+  body.pagina-manuela .menu-toggle { display: inline-block; }
+  body.pagina-manuela nav ul { display: none; }
+  body.pagina-manuela .titulo-foto { font-size: 1.4em; }
+  body.pagina-manuela .poema { font-size: 0.9em; max-width: 95%; }
+  body.pagina-manuela .moldura-cinza { max-width: 95%; }
+}
+
 
