@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quem Matou Manuela? - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-manuela">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="poesia.html">Poesia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-foto">
+      Quem Matou Manuela?<br>
+      (trecho do livro)
+    </h2>
+
+    <hr class="linha-vermelha">
+
+    <!-- Texto principal -->
+    <div class="moldura-cinza">
+      <pre class="poema">
+       Quando a arrumadeira insistiu em bater no quarto de Manuela sem que ela respondesse, ela usou sua chave reserva e entrou. A mulher parecia dormir serenamente. A arrumadeira tocou em seu ombro e, lívida, constatou que ela estava morta. Ao lado da cama, um copo pelo meio de leite. O que teria causado a morte de Manuela? Desceu correndo e chamando pelos outros. Logo todos acorreram ao quarto de Manuela, seguindo o chefe de pessoal, o Sr Jaime, que insistia em sacudir a patroa para que acordasse. Logo desistiu ao constatar que nada mais podia ser feito. E ficaram todos ali estáticos, chorando, sem ação. Foi Fabrício quem primeiro pensou em chamar um médico ou mesmo a polícia, pois que aquela era uma morte suspeita. Telefonaram para o médico da família e depois para o distrito policial, informando a situação e dando o endereço. Hermengarda, a cozinheira, ficou todo tempo ao lado de sua amada patroa, chorando convulsivamente, se assoando no avental branco e socando o próprio peito: eu a matei, eu a matei - soluçava.
+      </pre>
+    </div>
+
+    <!-- Link para download -->
+    <p class="download-link">
+      <a href="downloads.html">Fazer download do livro inteiro</a>
+    </p>
+
+    <hr class="linha-vermelha-final">
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
