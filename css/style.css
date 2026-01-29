@@ -2342,4 +2342,101 @@ body.pagina-quem-matou footer {
   body.pagina-quem-matou .moldura-cinza { max-width: 95%; }
 }
 
+/* ===== Página Adeus ===== */
+body.pagina-adeus main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-adeus .titulo-foto {
+  font-size: 1.8em;
+  margin: 20px 0;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Linhas verdes */
+body.pagina-adeus .linha-verde {
+  border: none;
+  border-top: 2px solid green;
+  margin: 20px 0;
+}
+
+/* Linha vermelha final */
+body.pagina-adeus .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+/* Molduras */
+body.pagina-adeus .moldura-cinza {
+  border: 1px solid #000;
+  background-color: #dcdcdc;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+/* Títulos dos textos */
+body.pagina-adeus .titulo-poema {
+  font-size: 1.3em;
+  margin: 20px 0 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Texto */
+body.pagina-adeus .poema {
+  margin: 0 auto 20px;
+  max-width: 800px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* GIFs */
+body.pagina-adeus .gif-topo,
+body.pagina-adeus .gif-baixo {
+  margin: 20px auto;
+  text-align: center;
+}
+body.pagina-adeus .gif-topo img,
+body.pagina-adeus .gif-baixo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Aviso final */
+body.pagina-adeus .aviso {
+  font-size: 0.9em;
+  color: #444;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: center;
+  font-style: italic;
+}
+
+body.pagina-adeus header,
+body.pagina-adeus footer {
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  body.pagina-adeus {
+    overflow-x: hidden; /* elimina rolagem lateral */
+  }
+  body.pagina-adeus .menu-toggle { display: inline-block; }
+  body.pagina-adeus nav ul { display: none; }
+  body.pagina-adeus .titulo-foto { font-size: 1.4em; }
+  body.pagina-adeus .titulo-poema { font-size: 1.1em; }
+  body.pagina-adeus .poema { font-size: 0.9em; max-width: 95%; }
+  body.pagina-adeus .moldura-cinza { max-width: 95%; }
+}
+
 
