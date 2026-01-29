@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sem Título/Biografia e Ficção - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-semtitulo">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="poesia.html">Poesia</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-foto">
+      Sem Título/Biografia e Ficção<br>
+      (Trecho de livro ainda não concluído)
+    </h2>
+
+    <hr class="linha-vermelha">
+
+    <!-- Texto principal -->
+    <div class="moldura-cinza">
+      <pre class="poema">
+        O prédio de quatro andares era velho. Provavelmente fora construído na década de cinquenta e nunca fora reformado.Não tinha uma cor definida, mas se aproximava do cinza.As janelas eram de madeira,abrindo para fora,em parte envidraçadas.O reboco estava em mal estado de conservação e sua entrada era sombria como todo o resto.Não tinha qualquer arquitetura especial e sua fachada frontal era simples e reta.
+
+        Mesmo a borda das janelas, em relevo, era simples e discreta.A cor das janelas era de um verde bem escuro e velho, o que quase as confundia com o resto da construção.  O prédio não estava abandonado, mas já havia sido condenado pela Defesa Civil. Os apartamentos estavam fechados, ou destruídos pelo tempo. Alguns lacrados pelos antigos   proprietários, que os visitavam raramente, com o único objetivo de melhorar o lacre, acrescentando tábuas e pregos aos já existentes. Nos apartamentos ocupados, poucos, viviam velhos  alquebrados, cujos filhos os abandonaram para viverem em melhor lugar. Ficavam por ali, a olhar a parede em frente, ou escutando no rádio as notícias e as músicas antigas.  Podia-se andar por todo prédio sem ser percebido. Bastava que se pisasse de leve nas velhas escadarias.
+
+        À frente do prédio cresciam frondosas árvores  e  somente o quarto andar  permitia uma certa visão da rua do outro lado de uma galeria de águas pluviais que dividia as duas pistas. De uma das janelas era possível ver a entrada do palácio do governo,exatamente o portão de entrada onde o Governador do Estado descia do carro para se dirigir a seu gabinete.Por alguns momentos era possível divisar a figura vistosa do político, saindo do carro e entrando no palácio. Seria suficiente?
+      </pre>
+    </div>
+
+    <hr class="linha-vermelha-final">
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
