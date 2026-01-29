@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Do Outro Lado do Universo - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-universo">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="poesia.html">Poesia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-foto">
+      Do Outro Lado do Universo<br>
+      (Trecho do meu livro)
+    </h2>
+
+    <hr class="linha-vermelha">
+
+    <!-- Texto principal -->
+    <div class="moldura-cinza">
+      <pre class="poema">
+O solo do nosso planeta naqueles dias era quente e escuro, além de ter pouca consistência. Sua porosidade era causada pelo incessante movimento subterrâneo e pela expulsão dos gases quentes de suas entranhas. Mais tarde, bem mais tarde, esse solo se solidificaria e permitiria se construir sobre ele, cultivar plantas e pastagens. Ofereceria segurança aos grandes animais que logo surgiriam e viveriam sobre ele. E ocultaria riquezas de toda ordem, que os milênios futuros trariam à tona um dia. E nessa paisagem desoladora, em meio à fumaça dos vulcões e dos rios de lava, do extremo calor e das violentas tempestades, algo surgiu no horizonte vermelho.
+
+Era um objeto que certamente não fazia parte do cenário, ou pelo menos não deveria fazer. Era metálico, brilhante, de formas suaves e arredondadas. Poderia ser comparado, talvez, a uma enorme gota de chuva, mas em posição horizontal e bastante achatada. Ao se aproximar, sua parte dianteira mostrava pequenos orifícios circulares, quase imperceptíveis, pois sua cor não diferia do restante do objeto. O corpo oblongo se movia lentamente e apesar de ser quase circular, sua parte traseira se estendia a quase que o diâmetro de sua circunferência, se dividindo em duas partes distintas, cada qual terminando em um tubo de onde saía um brilho azulado. Sem dúvida essa parte era a responsável pelo movimento retilíneo do objeto que se movia em direção oposta aos dois tubos e à luz azulada que deles saía.
+
+O objeto, na verdade uma nave espacial, se movia como se estivesse flutuando no ar, embora por seu aspecto parecesse ter um peso apreciável. Pairando sobre a paisagem catastrófica o objeto parecia ser muito grande, mas não havia como comparar seu tamanho. Não havia árvores, animais, acidentes geográficos que pudessem servir de parâmetro para se aquilatar suas reais dimensões. Mas pode-se dizer com certeza que era imenso, pelo simples modo como se movia, lenta e pesadamente. Difícil imaginar que aquilo pudesse voar, numa atmosfera rarefeita e com tempestades ocorrendo a cada momento. E no entanto, contra tudo que se possa pensar, ele flutuava suavemente, embora parecesse instável.
+
+Observando-se atentamente, podia-se ver na parte inferior do objeto uma pequena abertura, de onde saía uma luz quase transparente, invisível, que perscrutava o solo se fixando nos locais onde parecia haver alguma terra firme, como se buscasse um ponto onde descer. Não encontraria certamente, pois o objeto parecia ser maior do que qualquer nesga de terreno sólido.
+
+Finalmente surge o sol, em uma de suas rápidas aparições, produzindo do objeto ao solo uma sombra que cobria extensa área. Pelo tamanho da sombra projetada no solo, podia-se ver que a nave era gigantesca. A sombra cobria rios de lava, pequenas montanhas e vales, parecendo ser muito maior do que se possa imaginar. A nave, sua sombra, cobririam uma pequena cidade, o que tornava o objeto de medidas absurdas. Não obstante, estava lá, pairando sobre o solo quente e árido. E parecia buscar algo, alguma coisa. O que poderia estar procurando e de onde viera?
+
+E, súbito, a luz se apagou e o enorme engenho ficou imóvel em pleno espaço. Durante alguns minutos nada aconteceu, até que no fim de um facho suave de luz, surgiu um homem.
+      </pre>
+    </div>
+
+    <hr class="linha-vermelha-final">
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
