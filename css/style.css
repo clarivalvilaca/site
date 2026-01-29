@@ -2262,4 +2262,84 @@ body.pagina-estranha-viagem footer {
   body.pagina-estranha-viagem .moldura-cinza { max-width: 95%; }
 }
 
+/* ===== Página Quem Matou Caldwel ===== */
+body.pagina-quem-matou main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-quem-matou .titulo-foto {
+  font-size: 1.8em;
+  margin: 20px 0;
+  color: #000;
+}
+
+body.pagina-quem-matou .linha-cinza {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+}
+
+body.pagina-quem-matou .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+body.pagina-quem-matou .moldura-cinza {
+  border: 1px solid #000;
+  background-color: #dcdcdc; /* cinza claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+body.pagina-quem-matou .titulo-poema {
+  font-size: 1.3em;
+  margin: 20px 0 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Texto principal */
+body.pagina-quem-matou .poema {
+  margin: 0 auto 20px;
+  max-width: 800px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Aviso final */
+body.pagina-quem-matou .aviso {
+  font-size: 0.9em;
+  color: #444;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: center;
+  font-style: italic;
+}
+
+body.pagina-quem-matou header,
+body.pagina-quem-matou footer {
+  width: 100%;
+}
+
+/* Responsivo: mobile */
+@media (max-width: 768px) {
+  body.pagina-quem-matou {
+    overflow-x: hidden; /* elimina rolagem lateral */
+  }
+  body.pagina-quem-matou .menu-toggle { display: inline-block; }
+  body.pagina-quem-matou nav ul { display: none; }
+  body.pagina-quem-matou .titulo-foto { font-size: 1.4em; }
+  body.pagina-quem-matou .titulo-poema { font-size: 1.1em; }
+  body.pagina-quem-matou .poema { font-size: 0.9em; max-width: 95%; }
+  body.pagina-quem-matou .moldura-cinza { max-width: 95%; }
+}
+
 
