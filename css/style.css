@@ -2784,3 +2784,111 @@ body.pagina-opniao .poema {
   body.pagina-opniao .moldura-azul { max-width: 95%; }
 }
 
+/* ===== Página Comentários ===== */
+body.pagina-comentarios main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-comentarios .titulo-foto {
+  font-size: 1.8em;
+  margin: 20px 0 10px;
+  color: #000;
+}
+
+body.pagina-comentarios .subtitulo {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Linhas */
+body.pagina-comentarios .linha-cinza {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+}
+body.pagina-comentarios .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+/* Molduras coloridas */
+body.pagina-comentarios .moldura-vermelha {
+  border: 1px solid #000;
+  background-color: #f8d7da; /* vermelho claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+body.pagina-comentarios .moldura-azul {
+  border: 1px solid #000;
+  background-color: #d9ecf9; /* azul claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+body.pagina-comentarios .moldura-cinza {
+  border: 1px solid #000;
+  background-color: #f0f0f0; /* cinza claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+body.pagina-comentarios .moldura-verde {
+  border: 1px solid #000;
+  background-color: #d9f2d9; /* verde claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+body.pagina-comentarios .moldura-branca {
+  border: 1px solid #000;
+  background-color: #fff; /* branco */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+body.pagina-comentarios .moldura-amarela {
+  border: 1px solid #000;
+  background-color: #fff9c4; /* amarelo claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+
+/* Texto */
+body.pagina-comentarios .poema {
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  body.pagina-comentarios {
+    overflow-x: hidden;
+  }
+  body.pagina-comentarios .menu-toggle { display: inline-block; }
+  body.pagina-comentarios nav ul { display: none; }
+  body.pagina-comentarios .titulo-foto { font-size: 1.4em; }
+  body.pagina-comentarios .subtitulo { font-size: 1em; max-width: 95%; }
+  body.pagina-comentarios .poema { font-size: 0.9em; max-width: 95%; }
+  body.pagina-comentarios .moldura-vermelha,
+  body.pagina-comentarios .moldura-azul,
+  body.pagina-comentarios .moldura-cinza,
+  body.pagina-comentarios .moldura-verde,
+  body.pagina-comentarios .moldura-branca,
+  body.pagina-comentarios .moldura-amarela { max-width: 95%; }
+}
