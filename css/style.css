@@ -2699,4 +2699,88 @@ body.pagina-opnioes .descricao {
   body.pagina-opnioes .botao-link { padding: 8px 16px; font-size: 0.9em; }
 }
 
+/* ===== Página Opniao ===== */
+body.pagina-opniao main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-opniao .titulo-foto {
+  font-size: 1.8em;
+  margin: 20px 0;
+  color: #000;
+}
+
+body.pagina-opniao .subtitulo {
+  font-size: 0.95em;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Linhas */
+body.pagina-opniao .linha-cinza {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+}
+body.pagina-opniao .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+/* Molduras */
+body.pagina-opniao .moldura-cinza {
+  border: 1px solid #000;
+  background-color: #f0f0f0; /* cinza claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+body.pagina-opniao .moldura-verde {
+  border: 1px solid #000;
+  background-color: #d9f2d9; /* verde claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+body.pagina-opniao .moldura-azul {
+  border: 1px solid #000;
+  background-color: #d9ecf9; /* azul claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: justify;
+}
+
+/* Texto */
+body.pagina-opniao .poema {
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  body.pagina-opniao {
+    overflow-x: hidden;
+  }
+  body.pagina-opniao .menu-toggle { display: inline-block; }
+  body.pagina-opniao nav ul { display: none; }
+  body.pagina-opniao .titulo-foto { font-size: 1.4em; }
+  body.pagina-opniao .subtitulo { font-size: 0.85em; max-width: 95%; }
+  body.pagina-opniao .poema { font-size: 0.9em; max-width: 95%; }
+  body.pagina-opniao .moldura-cinza,
+  body.pagina-opniao .moldura-verde,
+  body.pagina-opniao .moldura-azul { max-width: 95%; }
+}
 
