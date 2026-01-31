@@ -3019,3 +3019,90 @@ body.pagina-entretenimento #resultadoVida {
   body.pagina-entretenimento .moldura-entretenimento { max-width: 95%; }
   body.pagina-entretenimento form { gap: 8px; }
 }
+
+/* ===== Página Downloads ===== */
+body.pagina-downloads main {
+  padding: 20px;
+  text-align: center;
+}
+
+body.pagina-downloads .titulo-foto {
+  font-size: 1.8em;
+  margin: 20px 0 10px;
+  color: #000;
+}
+
+body.pagina-downloads .subtitulo {
+  font-size: 1em;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Linhas */
+body.pagina-downloads .linha-vermelha {
+  border: none;
+  border-top: 2px solid red;
+  margin: 20px 0;
+}
+body.pagina-downloads .linha-vermelha-final {
+  border: none;
+  border-top: 4px solid red;
+  margin: 30px 0;
+}
+
+/* Moldura principal */
+body.pagina-downloads .moldura-downloads {
+  border: 1px solid #000;
+  background-color: #fff; /* fundo branco */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+body.pagina-downloads .moldura-downloads ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body.pagina-downloads .moldura-downloads li {
+  margin: 8px 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* Botões de download */
+body.pagina-downloads .botao-download {
+  display: inline-block;
+  background-color: #fff; /* branco */
+  color: #000;
+  border: 1px solid #000; /* borda preta fina */
+  padding: 5px 12px;
+  margin-left: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+body.pagina-downloads .botao-download:hover {
+  background-color: #f0f0f0; /* cinza claro no hover */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  body.pagina-downloads {
+    overflow-x: hidden;
+  }
+  body.pagina-downloads .menu-toggle { display: inline-block; }
+  body.pagina-downloads nav ul { display: none; }
+  body.pagina-downloads .titulo-foto { font-size: 1.4em; }
+  body.pagina-downloads .subtitulo { font-size: 0.9em; max-width: 95%; }
+  body.pagina-downloads .moldura-downloads { max-width: 95%; }
+  body.pagina-downloads .botao-download { font-size: 0.85em; padding: 4px 10px; }
+}
