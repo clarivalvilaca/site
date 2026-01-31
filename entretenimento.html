@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Links das Minhas Páginas Selecionadas - Clarival Vilaça</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body class="pagina-entretenimento">
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">Clarival Vilaça</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao início</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="quem-sou-eu.html">Quem sou eu?</a></li>
+        <li><a href="meus-livros.html">Meus livros</a></li>
+        <li><a href="entretenimento.html" class="active">Entretenimento</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="poesia.html">Poesia</a></li>
+        <li><a href="opnioes.html">Opniões</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-foto">LINKS DAS MINHAS PÁGINAS SELECIONADAS</h2>
+    <p class="subtitulo">
+      Esta página deveria ser voltada para o aspecto da informação. Aqui você encontraria os links que o levariam à sites úteis, interessantes ou engraçados. Entretanto, com o aparecimento de sites específicos de busca, competentíssimos, como o Google, por exemplo, fica difícil indicar algo que não se possa achar por lá, com muita facilidade. Relaciono abaixo, portanto, apenas aqueles blogs que visito e que foram criados por amigos meus, sites estes de amigos que conheci pela internet.
+    </p>
+
+    <hr class="linha-cinza">
+
+    <!-- Botões de links -->
+    <div class="moldura-cinza">
+      <a href="https://www.prista.com.br/" target="_blank" class="botao-azul">Site do João Prista</a>
+      <a href="https://www.prista.mus.br/" target="_blank" class="botao-azul">Músicas do Prista</a>
+    </div>
+
+    <hr class="linha-cinza">
+
+    <!-- Aviso -->
+    <p class="aviso">
+      Aqui existiam mais links, porém como os sites eram antigos infelizmente muitos já não existem mais. Mais tarde acrescentarei outros nomes à esta lista, que vai crescer bastante.
+    </p>
+
+    <hr class="linha-cinza">
+
+    <!-- Moldura de entretenimento -->
+    <div class="moldura-entretenimento">
+      <img src="imagens/relogio.png" alt="Imagem ilustrativa" class="img-entretenimento">
+
+      <form id="form-vida">
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+        <label for="horaNascimento">Hora de Nascimento:</label>
+        <input type="time" id="horaNascimento" name="horaNascimento">
+
+        <button type="button" onclick="calcularVida()">Calcular Tempo de Vida</button>
+      </form>
+
+      <div id="resultadoVida"></div>
+    </div>
+
+    <hr class="linha-vermelha-final">
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>Você é o visitante número:</p>
+    <div id="sfc32h5lsazpadl4hjdu4plmcfnflsx97rd"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=32h5lsazpadl4hjdu4plmcfnflsx97rd&down=async" async></script>
+    <noscript>
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=32h5lsazpadl4hjdu4plmcfnflsx97rd" border="0" alt="contador de visitas">
+    </noscript>
+    <p>&copy; Site criado por Clarival em 1999 e reformulado em 2025 pela Advan IT Solutions. Clarival Vilaça - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script>
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '☰';
+    document.querySelector('header').prepend(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Script para calcular tempo de vida
+    function calcularVida() {
+      const dataNascimento = document.getElementById('dataNascimento').value;
+      const horaNascimento = document.getElementById('horaNascimento').value || "00:00";
+
+      if (!dataNascimento) {
+        alert("Por favor, insira a data de nascimento.");
+        return;
+      }
+
+      const nascimento = new Date(dataNascimento + "T" + horaNascimento);
+      const agora = new Date();
+
+      const diffMs = agora - nascimento;
+      const diffMin = Math.floor(diffMs / (1000 * 60));
+      const diffHoras = Math.floor(diffMs / (1000 * 60 * 60));
+      const diffDias = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+      const diffSemanas = Math.floor(diffDias / 7);
+      const diffMeses = Math.floor(diffDias / 30.44); // média de dias por mês
+
+      // Próximo aniversário
+      const proximoAniversario = new Date(agora.getFullYear(), nascimento.getMonth(), nascimento.getDate());
+      if (proximoAniversario < agora) {
+        proximoAniversario.setFullYear(agora.getFullYear() + 1);
+      }
+      const diasParaAniversario = Math.ceil((proximoAniversario - agora) / (1000 * 60 * 60 * 24));
+
+      document.getElementById('resultadoVida').innerHTML = `
+        <p>Você já viveu aproximadamente:</p>
+        <ul>
+          <li>${diffMeses} meses</li>
+          <li>${diffSemanas} semanas</li>
+          <li>${diffDias} dias</li>
+          <li>${diffHoras} horas</li>
+          <li>${diffMin} minutos</li>
+        </ul>
+        <p>Faltam ${diasParaAniversario} dias para o seu próximo aniversário 🎂</p>
+      `;
+    }
+  </script>
+</body>
+</html>
